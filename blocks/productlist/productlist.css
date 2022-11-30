@@ -5,7 +5,7 @@ body{
   font-size: 16px;
 }
 
-.wrapper{
+.productlist.block{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 1rem;
@@ -20,7 +20,7 @@ body{
       box-shadow: 0 5px 40px rgba(0,0,0,.3);
     }
     img{
-      width: 100%;
+      width: 50%;
       overflow: hidden;
     }
     .product-name{
@@ -28,6 +28,13 @@ body{
       font-size: 1.1rem;
       font-weight: 700;
       text-transform: uppercase;
+    }
+
+    .product-description{
+      margin: 1em 0;
+      font-size: 1.1rem;
+      font-weight: 200;
+      text-transform: lowercase;
     }
     .btn-buy{
       cursor: pointer;
