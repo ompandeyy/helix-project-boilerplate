@@ -49,7 +49,7 @@ console.log("Remote App Type = "+ remoteAppType);
    } else if(remoteAppType !== 'undefined' && remoteAppType !== '' &&( remoteAppType === 'checkout' || remoteAppType === 'Checkout')){
     domain = "http://localhost:3008";
    } else{
-       domain = "http://localhost:3000";
+       domain = "http://localhost:3010";
    }
 
    if(domain) {
