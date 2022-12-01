@@ -9,7 +9,7 @@ function getData() {
     } else if(productType !== 'undefined' && productType !== '' && productType === 'laptops'){
         apiUrl = "https://dummyjson.com/products/category/laptops";
 
-    } else if(productType !== 'undefined' && productType !== '' && productType === 'fragrences'){
+    } else if(productType !== 'undefined' && productType !== '' && productType === 'fragrances'){
         apiUrl = "https://dummyjson.com/products/category/fragrances";
 
     } else{
