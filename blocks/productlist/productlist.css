@@ -6,7 +6,7 @@ body{
 }
 
 main .section.productlist-container {
-  background-color:#b6b5b5;
+  background-color:#ccc;
 }
 .productlist.block{
   display: grid;
