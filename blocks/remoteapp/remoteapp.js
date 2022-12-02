@@ -44,7 +44,7 @@ console.log("Remote App Type = "+ remoteAppType);
   };
 
    let domain = "";
-   if(remoteAppType !== 'undefined' && remoteAppType !== '' &&( remoteAppType === 'login' || remoteAppType === 'Login')){
+   if(remoteAppType !== 'undefined' && remoteAppType !== '' &&( remoteAppType === 'newsletter' || remoteAppType === 'Newsletter')){
      domain = "http://localhost:3000";
    } else if(remoteAppType !== 'undefined' && remoteAppType !== '' &&( remoteAppType === 'checkout' || remoteAppType === 'Checkout')){
     domain = "http://localhost:3008";
