@@ -43,9 +43,9 @@ colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
     logosRow.className = 'row d-flex';
   }
 
-  const logoUrl = logo.nextElementSibling.textContent;
-  const imageUrl = logo.querySelector('img').getAttribute('src');
-  const imageAlt = logo.querySelector('img').getAttribute('alt');
+  const logoUrl = logosRow.nextElementSibling.textContent;
+  const imageUrl = logosRow.querySelector('img').getAttribute('src');
+  const imageAlt = logosRow.querySelector('img').getAttribute('alt');
 
   const logoElement = document.createElement('div');
   logoElement.className = 'logo-design';
