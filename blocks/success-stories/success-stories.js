@@ -1,3 +1,5 @@
+import { createOptimizedPicture } from '../../scripts/scripts.js';
+
 // Get the target element to replace
 const targetElement = document.querySelector('.success-stories-wrapper');
 
@@ -29,8 +31,8 @@ const successStoriesContainer = newElement.querySelector('.equal-heights');
 // Get the data from [1] HTML
 const successStories = targetElement.querySelectorAll('.success-stories');
 
-// Loop through the success stories and create columns
-successStories.forEach((story) => {
+export default function decorate(block) {
+  [...block.children].forEach((story) => {
   const column = document.createElement('div');
   column.className = 'col-md-3 col-sm-6 col-xs-12 mb20 relative wow fadeInLeft animated';
   column.dataset.wowDelay = '0.3s';
@@ -48,8 +50,8 @@ successStories.forEach((story) => {
     </div>
   `;
 
-  successStoriesContainer.appendChild(column);
-});
-
+  successStoriesContainer.appendChild(column);    
+  });
+}
 // Replace the target element with the new element
 targetElement.parentNode.replaceChild(newElement, targetElement);
