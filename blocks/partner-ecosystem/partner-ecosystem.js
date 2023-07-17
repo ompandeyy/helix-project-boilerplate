@@ -62,7 +62,7 @@ if (index > 0 && index % 5 === 0) {
     </div>
   `;
 
-  colElement.appendChild(logoElement);
+  colElement.appendChild(logoElement); 
 
   if ((index + 1) % 5 === 0 || index === logos.length - 1) {
     logosRow.appendChild(colElement);
