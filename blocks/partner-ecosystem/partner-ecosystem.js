@@ -27,12 +27,11 @@ newElement.innerHTML = `
   </section>
 `;
 
-
+const logosContainer = newElement.querySelector('.row.d-flex');
 
 
 export default function decorate(block) {
 // Get the container element for the logos
-const logosContainer = newElement.querySelector('.row.d-flex');
 
 // Get the data from [1] HTML
 const logos = block;
