@@ -34,7 +34,17 @@ const logosContainer = newElement.querySelector('.row.d-flex');
 // Loop through the logos and create the logo elements
 
 export default function decorate(block) {
-[...block.children].forEach((logo) => {
+// Loop through the logos and create the logo elements
+let logosRow = document.createElement('div');
+logosRow.className = 'row d-flex';
+
+[...block.children].forEach((logo, index) => {
+if (index > 0 && index % 5 === 0) {
+    logosContainer.appendChild(logosRow);
+    logosRow = document.createElement('div');
+    logosRow.className = 'row d-flex';
+  }
+
   const logoUrl = logo.nextElementSibling.textContent;
   const imageUrl = logo.querySelector('img').getAttribute('src');
   const imageAlt = logo.querySelector('img').getAttribute('alt');
