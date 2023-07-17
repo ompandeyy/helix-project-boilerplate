@@ -1,0 +1,83 @@
+.overview-segment-para {
+    color: #fff !important;
+}
+#ecosystem {
+    background-color: #061838;
+    padding: 75px 0;
+}
+.logo-design {
+    z-index: 0;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #e2e9ed;
+    border-radius: 0px;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.logo-design:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+    transform: scale(1.20);
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+}
+.logo-design:hover img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all 0.5s ease;
+}
+}
+.logo-design img {
+    border-radius: 0px;
+}
+.logo-design-head {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+    font-family: 'tungstenw05-medium', 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.logo-design-para {
+    line-height: 1.2;
+    font-size: 16px;
+}
+.logo-design-links a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000;
+}
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-start {
+    justify-content: start;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.logo-design.active-hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+    transform: scale(1.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 767px) {
+.d-flex {
+    display: block;
+}
+.logo-design img {
+    height: 100px;
+}
+}
