@@ -62,8 +62,9 @@ if (index > 0 && index % 5 === 0) {
       </div>
     `;
     colElement.appendChild(logoElement);
+    const logos = targetElement.querySelectorAll('div');
 
-      if ((index + 1) % 5 === 0 || index === block.length - 1) {
+      if ((index + 1) % 5 === 0 || index === logos.length - 1) {
         logosRow.appendChild(colElement);
         colElement = document.createElement('div');
         colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
