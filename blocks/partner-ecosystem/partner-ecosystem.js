@@ -73,8 +73,6 @@ if (index > 0 && index % 5 === 0) {
 
 // Add the last row of logos to the container
 logosContainer.appendChild(logosRow);
-  });
-}
-
+  }
 // Replace the target element with the new element
 targetElement.parentNode.replaceChild(newElement, targetElement);
