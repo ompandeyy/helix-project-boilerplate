@@ -34,43 +34,26 @@ const logosContainer = newElement.querySelector('.row.d-flex');
 // Loop through the logos and create the logo elements
 
 export default function decorate(block) {
-// Loop through the logos and create the logo elements
-let logosRow = document.createElement('div');
-logosRow.className = 'row d-flex';
-
-let colElement = document.createElement('div');
-colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
-
 [...block.children].forEach((logo, index) => {
-if (index > 0 && index % 5 === 0) {
-    logosContainer.appendChild(logosRow);
-    logosRow = document.createElement('div');
-    logosRow.className = 'row d-flex';
-  }
-
   const logoUrl = logo.nextElementSibling.textContent;
   const imageUrl = logo.querySelector('img').getAttribute('src');
   const imageAlt = logo.querySelector('img').getAttribute('alt');
 
   const logoElement = document.createElement('div');
-    logoElement.className = 'logo-design';
-    logoElement.innerHTML = `
+  logoElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
+
+  logoElement.innerHTML = `
+    <div class="logo-design">
       <div class="logo-img-wrap">
         <a href="${logoUrl}" title="${imageAlt}">
           <img src="${imageUrl}" class="img-responsive get-image-height center-block" alt="${imageAlt}">
         </a>
       </div>
-    `;
-    colElement.appendChild(logoElement);
-    const logos = targetElement.querySelectorAll('div');
+    </div>
+  `;
 
-      if ((index + 1) % 5 === 0 || index === logos.length - 1) {
-        logosRow.appendChild(colElement);
-        colElement = document.createElement('div');
-        colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
-      }
-  });
   logosContainer.appendChild(logoElement);
+  });
 }
 
 // Replace the target element with the new element
