@@ -41,11 +41,25 @@ export default function decorate(block) {
   column.style.mozAnimationDelay = '0.3s';
   column.style.animationDelay = '0.3s';
 
-  const storyHTML = story.innerHTML;
+  const imageSrc = story.querySelector('img').getAttribute('src');
+  const imageAlt = story.querySelector('img').getAttribute('alt');
+  const description = story.querySelector('div').textContent;
+
   column.innerHTML = `
     <div class="equal-bg bg-light-white">
       <div class="row">
-        ${storyHTML}
+        <div class="col-md-12 col-sm-12 col-xs-12 p0">
+          <img src="${imageSrc}" alt="${imageAlt}" class="img-responsive get-image-height">
+          <p class="title-box-yellow minus-top">Client Speak</p>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 relative-off">
+          <div class="eqheight">
+            <p class="caption-txt"><a title="${imageAlt}" class="black-color" href="/industries/healthcare/pacesetters/digital-growth-enterprise.html#pacesettersvideo" target="_self">${description}</a></p>
+            <ul class="list-inline tag-bg">
+              <li class="lct-txt">  </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   `;
