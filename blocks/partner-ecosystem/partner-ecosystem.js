@@ -71,11 +71,13 @@ logos.forEach((logo, index) => {
     colElement = document.createElement('div');
     colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
   }
-});
-}
 
+});
 // Add the last row of logos to the container
 logosContainer.appendChild(logosRow);
+}
+
+
 
 // Replace the target element with the new element
 targetElement.parentNode.replaceChild(newElement, targetElement);
