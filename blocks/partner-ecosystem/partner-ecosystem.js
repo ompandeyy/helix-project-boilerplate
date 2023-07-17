@@ -38,6 +38,9 @@ export default function decorate(block) {
 let logosRow = document.createElement('div');
 logosRow.className = 'row d-flex';
 
+let colElement = document.createElement('div');
+colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
+
 [...block.children].forEach((logo, index) => {
 if (index > 0 && index % 5 === 0) {
     logosContainer.appendChild(logosRow);
@@ -50,19 +53,26 @@ if (index > 0 && index % 5 === 0) {
   const imageAlt = logo.querySelector('img').getAttribute('alt');
 
   const logoElement = document.createElement('div');
-  logoElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
-
+  logoElement.className = 'logo-design';
   logoElement.innerHTML = `
-    <div class="logo-design">
-      <div class="logo-img-wrap">
-        <a href="${logoUrl}" title="${imageAlt}">
-          <img src="${imageUrl}" class="img-responsive get-image-height center-block" alt="${imageAlt}">
-        </a>
-      </div>
+    <div class="logo-img-wrap">
+      <a href="${logoUrl}" title="${imageAlt}">
+        <img src="${imageUrl}" class="img-responsive get-image-height center-block" alt="${imageAlt}">
+      </a>
     </div>
   `;
 
-  logosContainer.appendChild(logoElement);
+  colElement.appendChild(logoElement);
+
+  if ((index + 1) % 5 === 0 || index === logos.length - 1) {
+    logosRow.appendChild(colElement);
+    colElement = document.createElement('div');
+    colElement.className = 'col-lg-2 col-md-2 col-sm-4 col-xs-12';
+  }
+});
+
+// Add the last row of logos to the container
+logosContainer.appendChild(logosRow);
   });
 }
 
