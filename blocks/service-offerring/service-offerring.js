@@ -1,4 +1,4 @@
-<script>
+
   // Get the target element
   var targetElement = document.querySelector('.service-offerring-wrapper');
 
@@ -101,4 +101,3 @@
 
   // Replace the original target element with the converted offerings [2]
   targetElement.parentNode.replaceChild(mainContainer, targetElement);
-</script>
