@@ -24,7 +24,7 @@ const carouselContainer = newElement.querySelector('#hero_slider_carousel');
 
 export default function decorate(block) {
 [...block.children].forEach((item) => {
-  const picture = item.querySelector('picture');
+const picture = item.querySelector('picture');
   const imgSrc = picture.querySelector('img').getAttribute('src');
   const imgAlt = picture.querySelector('img').getAttribute('alt');
   const buttonHref = item.querySelector('.button-container > a').getAttribute('href');
@@ -32,22 +32,25 @@ export default function decorate(block) {
   const description = item.querySelector('div:nth-child(3)').textContent;
 
   const carouselItem = document.createElement('div');
-  carouselItem.className = 'item';
+  carouselItem.className = 'owl-item cloned';
+  carouselItem.style.width = '1263.33px';
   carouselItem.innerHTML = `
-    <div class="teaser">
-      <img class="portal-mob visible-xs" src="/content/dam/infosys-web/en/global-resource/background-image/portals.png" alt="Portals">
-      <div role="img" aria-label="${description}" class="repeated-css industries-gradient">
-        <img src="${imgSrc}" class="slide-image hidden-xs" alt="${imgAlt}">
-        <img src="${imgSrc}" class="slide-image visible-xs" alt="${imgAlt}">
-      </div>
-      <div class="slider-overlay-coral"></div>
-      <div class="caption">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated animated" style="visibility: visible;">
-              <p class="text-uppercase topicIndicator">${buttonTitle}</p>
-              <p class="h2-heading white-color">${description}</p>
-              <a href="${buttonHref}" target="_blank" class="btn btn-shutter-more text-uppercase" aria-describedby="${buttonTitle}">Learn More</a>
+    <div class="item slide-2">
+      <div class="teaser">
+        <img class="portal-mob visible-xs" src="/content/dam/infosys-web/en/global-resource/background-image/portals.png" alt="Portals">
+        <div role="img" aria-label="${description}" class="repeated-css industries-gradient">
+          <img src="${imgSrc}" class="slide-image hidden-xs" alt="${imgAlt}">
+          <img src="${imgSrc}" class="slide-image visible-xs" alt="${imgAlt}">
+        </div>
+        <div class="slider-overlay-coral"></div>
+        <div class="caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated animated" style="visibility: visible;">
+                <p class="text-uppercase topicIndicator">${buttonTitle}</p>
+                <p class="h2-heading white-color">${description}</p>
+                <a href="${buttonHref}" target="_blank" class="btn btn-shutter-more text-uppercase" aria-describedby="${buttonTitle}">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
