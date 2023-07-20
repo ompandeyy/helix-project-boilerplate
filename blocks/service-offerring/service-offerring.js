@@ -33,9 +33,9 @@ function convertHTML() {
     offering.classList.add('col-md-3', 'col-sm-4', 'col-xs-12', 'mb-sm-20');
     const anchor = offering.querySelector('div:nth-child(2)');
     const a = document.createElement('a');
-    a.setAttribute('href', anchor.textContent);
-    a.setAttribute('title', anchor.previousElementSibling.textContent);
-    a.textContent = anchor.previousElementSibling.textContent;
+    //a.setAttribute('href', anchor.textContent);
+    //a.setAttribute('title', anchor.previousElementSibling.textContent);
+    //a.textContent = anchor.previousElementSibling.textContent;
     anchor.parentNode.replaceChild(a, anchor);
   });
 
