@@ -1,54 +1,46 @@
-// Function to convert HTML from [1] to [2]
-function convertHTML() {
-  const originalContainer = document.querySelector('.service-offerring'); // Select the original container [1]
-  const newContainer = document.createElement('div'); // Create a new container [2]
-  newContainer.classList.add('offeringscontainer', 'aem-GridColumn', 'aem-GridColumn--default--12');
+import { createOptimizedPicture } from '../../scripts/scripts.js';
 
-  const sectionElement = document.createElement('section');
-  sectionElement.setAttribute('id', 'our_offerings');
-  sectionElement.classList.add('pt75');
+  // Get the target element to replace
+  const targetElement = document.querySelector('.service-offerring');
 
-  const articleElement = document.createElement('article');
-  articleElement.classList.add('container-fluid', 'p0', 'wow', 'fadeInUp', 'animated');
-  articleElement.setAttribute('data-wow-delay', '0.6s');
-  articleElement.setAttribute('style', 'visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;');
+  // Create a new <div> element
+  const newElement = document.createElement('div');
+  newElement.className = 'offeringscontainer aem-GridColumn aem-GridColumn--default--12';
 
-  const rowDiv = document.createElement('div');
-  rowDiv.classList.add('row-fluid', 'offering-hover', 'mt50');
+  // Set the HTML content for the new element
+  newElement.innerHTML = `
+    <section id="our_offerings" class="pt75 ">
+      <article class="container-fluid p0 wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+        <div class="row-fluid offering-hover mt50">
+          <div class="border-left"></div>
+          <div class="offerings-row clearfix">
+            <div class="service-offering">
+              <div class="col-md-3 col-sm-12 col-xs-12 mb-sm-20">
+                <p class="offering-title">${targetElement.querySelector('div > div').textContent}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  `;
 
-  const borderDiv = document.createElement('div');
-  borderDiv.classList.add('border-left');
+  // Get the container element for the service offerings
+  const serviceOfferingContainer = newElement.querySelector('.offerings-row');
 
-  const offeringsRowDiv = document.createElement('div');
-  offeringsRowDiv.classList.add('offerings-row', 'clearfix');
-
-  // Clone the original container content and modify the structure
-  const clonedContainer = originalContainer.cloneNode(true);
-  const segmentTitle = clonedContainer.querySelector(':first-child > div:first-child');
-  const offerings = Array.from(clonedContainer.querySelectorAll(':not(:first-child)'));
-
-  // Modify the classes and structure to match the [2] HTML
-  segmentTitle.classList.add('col-md-3', 'col-sm-12', 'col-xs-12', 'mb-sm-20');
-  offerings.forEach((offering) => {
-    offering.classList.add('col-md-3', 'col-sm-4', 'col-xs-12', 'mb-sm-20');
-    const anchor = offering.querySelector('div:nth-child(2)');
-    const a = document.createElement('a');
-    //a.setAttribute('href', anchor.textContent);
-    //a.setAttribute('title', anchor.previousElementSibling.textContent);
-    //a.textContent = anchor.previousElementSibling.textContent;
-    anchor.parentNode.replaceChild(a, anchor);
+export default function decorate(block) {
+   [...block.children].forEach((item) => {
+    const title = item.querySelector('div:first-child').textContent;
+    const link = item.querySelector('div:last-child').textContent;
+    const offeringElement = document.createElement('div');
+    offeringElement.className = 'col-md-3 col-sm-4 col-xs-12 mb-sm-20';
+    offeringElement.innerHTML = `
+      <ul class="offering-list">
+        <li><a href="${link}" title="${title}">${title}</a></li>
+      </ul>
+    `;
+    serviceOfferingContainer.appendChild(offeringElement);
   });
-
-  offeringsRowDiv.appendChild(clonedContainer);
-  rowDiv.appendChild(borderDiv);
-  rowDiv.appendChild(offeringsRowDiv);
-  articleElement.appendChild(rowDiv);
-  sectionElement.appendChild(articleElement);
-  newContainer.appendChild(sectionElement);
-
-  // Replace the original container [1] with the new container [2]
-  originalContainer.parentNode.replaceChild(newContainer, originalContainer);
 }
-
-// Call the function to convert the HTML
-convertHTML();
+  // Replace the target element with the new element
+  targetElement.parentNode.replaceChild(newElement, targetElement);
