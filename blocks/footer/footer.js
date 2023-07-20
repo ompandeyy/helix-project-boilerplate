@@ -56,4 +56,3 @@
 
   // Replace the target element with the new element
   targetElement.parentNode.replaceChild(newElement, targetElement);
-}
