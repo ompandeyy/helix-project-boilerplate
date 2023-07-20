@@ -1,4 +1,5 @@
-window.onload = function () {
+//window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
     //Getting main Div container
     var mainDiv = document.querySelector('.request-for-services-wrapper');
     //Getting whole Div from plain.html
@@ -366,5 +367,5 @@ window.onload = function () {
           document.getElementById('name').focus();
       }
     // FORM VALIDATION SCRIPT ends here
-
-}
+});
+//}
