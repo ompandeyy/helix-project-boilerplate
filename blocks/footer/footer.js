@@ -1,3 +1,5 @@
+function convertHTML() {
+  // Get the target element to replace
   const targetElement = document.querySelector('div');
 
   // Create a new <div> element
@@ -12,6 +14,8 @@
   const headerContent = document.createElement('div');
   headerContent.className = 'freeflowhtml aem-GridColumn aem-GridColumn--default--12';
 
+  // Preserve the innerHTML of the original target element and append it to the headerContent
+  headerContent.innerHTML = targetElement.innerHTML;
   headerGrid.appendChild(headerContent);
   headerSection.appendChild(headerGrid);
   newElement.appendChild(headerSection);
@@ -56,3 +60,7 @@
 
   // Replace the target element with the new element
   targetElement.parentNode.replaceChild(newElement, targetElement);
+}
+
+// Call the function to convert the HTML
+convertHTML();
