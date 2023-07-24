@@ -6,17 +6,8 @@ import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
  */
 
 export default async function decorate(block) {
-  const cfg = readBlockConfig(block);
-  block.textContent = '';
 
-  const footerPath = cfg.footer || '/footer';
-  const resp = await fetch(`${footerPath}.plain.html`);
-  const html = await resp.text();
-  const footer = document.createElement('div');
-  footer.innerHTML = html;
-  await decorateIcons(footer);
-  block.append(footer);
-  // Create a new <div> element
+ // Create a new <div> element
   const newElement = document.createElement('div');
   newElement.className = 'freeflowhtml aem-GridColumn aem-GridColumn--default--12';
 
@@ -32,7 +23,17 @@ export default async function decorate(block) {
         </article>
       </footer>
   `;
+  
+  const cfg = readBlockConfig(block);
+  block.textContent = '';
 
+  const footerPath = cfg.footer || '/footer';
+  const resp = await fetch(`${footerPath}.plain.html`);
+  const html = await resp.text();
+  const footer = document.createElement('div');
+  footer.innerHTML = html;
+  await decorateIcons(footer);
+  block.append(footer);
       // Get the target container to insert the content
       const targetContainer = document.querySelector('#footer .container .row');
 
