@@ -1,27 +1,4 @@
 /*-- Overview --*/
-#overview {
-	position: relative;
-}
 #overview:before, #resource_center:before, #related_content:before, .bg-pattern:before, #pattern_bg:before {
-	position: absolute;
-	z-index: -1;
-	content: "";
-	width: 100%;
-	height: 600px;
-	left: 0;
-	top: 0;
 	background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/pattern-bg.png) !important;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-ms-background-size: cover;
-	background-size: cover;
-	background-position: center center;	
-}
-
-.para-ovr {
-	font-size: 30px;
-	line-height: 45px;
-	padding-top: 10px;
-	font-weight: 300;
 }
