@@ -1,5 +1,5 @@
-//window.onload = function () {
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function () {
+//document.addEventListener("DOMContentLoaded", function() {
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
     //adding classNames to main Div
@@ -104,5 +104,5 @@ document.addEventListener("DOMContentLoaded", function() {
     InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     articleElem.appendChild(outsideRowanchor);
     //appending everything ends here
-});
-//}
+//});
+}
