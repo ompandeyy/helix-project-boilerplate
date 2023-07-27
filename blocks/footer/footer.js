@@ -46,8 +46,8 @@ export default async function decorate(block) {
       const h3Element = item.querySelector("h3");
       // Get the li element
       const liElement = item.querySelector("li");
-      const linkText;
-      const href;
+      const linkText = "Link Text not found!";
+      const href = "Link not found!";
      if (liElement) {
                 const link = liElement.querySelector('a');
                 linkText = link ? link.textContent : "Link not found!";
