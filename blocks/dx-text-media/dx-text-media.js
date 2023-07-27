@@ -1,21 +1,29 @@
-window.onload = function () {
-//document.addEventListener("DOMContentLoaded", function() {
     //Getting main Div container
     var mainDiv = document.querySelector('.dx-text-media');
-    //adding classNames to main Div
-    mainDiv.classList.add('freeflowhtml','aem-GridColumn','aem-GridColumn--default--12');
+    
+     mainDiv.setAttribute('class','freeflowhtml');
+    var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
+      //adding classNames to main Div
+      mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
+   
     //creating section element
     var sectionElem = document.createElement('section');
     //adding Id to section
     sectionElem.setAttribute('id','overview');
+     mainDiv.appendChild(sectionElem);
+   
     //creating article
     var articleElem = document.createElement('article');
     //adding class to article
     articleElem.setAttribute('class','container');
+     sectionElem.appendChild(articleElem);
+   
     //creating div
     var containerDiv = document.createElement('div');
     //adding class to container Div
-    containerDiv.setAttribute('class','row');    
+    containerDiv.setAttribute('class','row');  
+     articleElem.appendChild(containerDiv);
+   
     //creating div inside Div Container
     var InsideContainerFirstDiv = document.createElement('div');
     //adding className to container first Div
@@ -27,17 +35,22 @@ window.onload = function () {
     InsideContainerFirstDiv.style.webkitAnimationDelay = '0.3s';
     InsideContainerFirstDiv.style.mozAnimationDelay = '0.3s';
     InsideContainerFirstDiv.style.animationDelay = '0.3s';
+    containerDiv.appendChild(InsideContainerFirstDiv);
+    
     //Creating second Div inside Div Conatiner
     var InsideContainerSecondDiv = document.createElement('div');
     //adding className to above Div
     InsideContainerSecondDiv.classList.add('h1-heading','text-center','mb50');
     //adding text to above div
-    InsideContainerSecondDiv.innerHTML='Digital Experience';
+    InsideContainerSecondDiv.innerHTML = mainClassHeading;
+    InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
+
     //Getting div container presented from plain.html For Hiding
-    var InsideMainDiv = document.querySelector('.dx-text-media > div');
+    var InsideMainDiv = document.querySelector('.freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-    //creating div for para
+     var paraContent = document.querySelectorAll('.freeflowhtml > div > div')[1].textContent;
+     var videoUrl = document.querySelectorAll(".freeflowhtml > div > div")[2].textContent;
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
@@ -48,12 +61,16 @@ window.onload = function () {
     InsideRowFirstDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.mozAnimationDelay = '0.6s';
     InsideRowFirstDiv.style.animationDelay = '0.6s';
-    //creating para inside row Div
-    var InsideRowPara = document.createElement('p');
+    containerDiv.appendChild(InsideRowFirstDiv); 
+     //creating para inside row Div
+     var InsideRowPara = document.createElement('p');
     //adding class to para inside row Div
     InsideRowPara.setAttribute('class','para-ovr');
-    //setting data to para inside row Div
-    InsideRowPara.innerHTML = 'Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.';
+  
+   InsideRowPara.innerHTML = paraContent;
+  InsideRowFirstDiv.appendChild(InsideRowPara);
+
+// Infosys Digital Experience (DX) powers businesses across the entire Customer Experience (CX) journey. We re-imagine, create and deliver integrated and personalized experiences by creating human-centered digital platforms. We help enterprises stay relevant by transforming business models, future proofing, bringing agility and responsiveness.
     //creating second div inside row Div
     var InsideRowSecondDiv = document.createElement('div');
     //adding className to second div inside row Div 
@@ -65,13 +82,16 @@ window.onload = function () {
     InsideRowSecondDiv.style.webkitAnimationDelay = '0.6s';
     InsideRowSecondDiv.style.mozAnimationDelay = '0.6s';
     InsideRowSecondDiv.style.animationDelay = '0.6s';
+    containerDiv.appendChild(InsideRowSecondDiv);
     //A variable that creates video tag to append in second div inside row Div 
     var InsideRowSecondDivVideo = document.createElement('video');
     // Local file to append in second div inside row Div 
-    InsideRowSecondDivVideo.src = 'https://videos.infosys.com/watch/RjFVtvoiRvUJSA1EGC2Cmf?';
+    
+    InsideRowSecondDivVideo.src = videoUrl;
     InsideRowSecondDivVideo.autoplay = true;
     InsideRowSecondDivVideo.loop = true;
     InsideRowSecondDivVideo.controls = true;
+    InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
     //creating anchor tag after row Div
     var outsideRowanchor = document.createElement('a');
     //adding attribute to anchor tag after row Div 
@@ -89,20 +109,5 @@ window.onload = function () {
     outsideRowanchor.setAttribute('aria-label','Read More about undefined');
     //setting data to anchor tag after row Div
     outsideRowanchor.innerHTML = 'Read More';
+     articleElem.appendChild(outsideRowanchor);
     // img tag inside video tag to append in second div inside row Div reference link: 'https://play.vidyard.com/RjFVtvoiRvUJSA1EGC2Cmf.jpg'
-    
-    //appending everything starts Here
-    mainDiv.appendChild(sectionElem);
-    sectionElem.appendChild(articleElem);
-    articleElem.appendChild(containerDiv);
-    containerDiv.appendChild(InsideContainerFirstDiv);
-    InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
-    containerDiv.appendChild(InsideMainDiv);
-    containerDiv.appendChild(InsideRowFirstDiv);
-    InsideRowFirstDiv.appendChild(InsideRowPara);
-    containerDiv.appendChild(InsideRowSecondDiv);
-    InsideRowSecondDiv.appendChild(InsideRowSecondDivVideo);
-    articleElem.appendChild(outsideRowanchor);
-    //appending everything ends here
-//});
-}
