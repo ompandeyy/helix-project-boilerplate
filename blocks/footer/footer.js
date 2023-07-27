@@ -57,6 +57,7 @@ export default async function decorate(block) {
             }
       // Read the content of h3 and li
       const h3Content = h3Element ? h3Element.textContent : "h3 element not found!";
+      console.log("h3Content"+ h3Content),
       column.innerHTML = `
         <h3 class="ftr-head mt-xs-20">${h3Content}</h3>
                             <ul class="list-unstyled footer-txt">
