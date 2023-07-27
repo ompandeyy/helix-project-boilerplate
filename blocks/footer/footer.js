@@ -18,10 +18,9 @@ export default async function decorate(block) {
     // decorate footer DOM
     const footer = document.createElement('div');
     footer.innerHTML = html;
-    console.log("html :"+html);
 
-    decorateIcons(footer);
-    block.append(footer);
+    //decorateIcons(footer);
+    //block.append(footer);
 
     // Create a new <div> element
     const newElement = document.createElement('div');
@@ -41,12 +40,12 @@ export default async function decorate(block) {
 
     const footerContainer = newElement.querySelector('.row');
 
-    [...block.children].forEach((item) => {
+    [...footer.children].forEach((item) => {
       const column = document.createElement('div');
       column.className = 'col-lg-2 col-md-3 col-sm-4 col-xs-12';
-      const h3Element = document.querySelector("h3.ftr-head");
+      const h3Element = document.querySelector("#footer h3.ftr-head");
       // Get the li element
-      const liElement = document.querySelector("ui>li");
+      const liElement = document.querySelector("#footer ui>li");
      if (liElement) {
                 const link = liElement.querySelector('a');
                 const linkText = link ? link.textContent : "Link not found!";
@@ -58,7 +57,6 @@ export default async function decorate(block) {
             }
       // Read the content of h3 and li
       const h3Content = h3Element ? h3Element.textContent : "h3 element not found!";
-      console.log("h3Content"+ h3Content),
       column.innerHTML = `
         <h3 class="ftr-head mt-xs-20">${h3Content}</h3>
                             <ul class="list-unstyled footer-txt">
