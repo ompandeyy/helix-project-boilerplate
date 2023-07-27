@@ -45,7 +45,7 @@ export default async function decorate(block) {
       column.className = 'col-lg-2 col-md-3 col-sm-4 col-xs-12';
       const h3Element = item.querySelector("h3");
       // Get the li element
-      const liElement = item.querySelector("ui>li");
+      const liElement = item.querySelector("li");
      if (liElement) {
                 const link = liElement.querySelector('a');
                 const linkText = link ? link.textContent : "Link not found!";
