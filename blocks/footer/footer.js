@@ -1,83 +1,70 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/scripts.js';
+import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
 
 /**
  * loads and decorates the footer
- * @param {Element} block The header block element
+ * @param {Element} block The footer block element
  */
-
 export default async function decorate(block) {
-
- // Create a new <div> element
-  const newElement = document.createElement('div');
-  newElement.className = 'freeflowhtml aem-GridColumn aem-GridColumn--default--12';
-
-  // Set the HTML content for the new element
-  newElement.innerHTML = `
-    <footer id="footer">
-        <article>
-          <div class="container pt50 pb50">
-            <div class="row">
-              <!-- JavaScript will insert the content here -->
-            </div>
-          </div>
-        </article>
-      </footer>
-  `;
-  
   const cfg = readBlockConfig(block);
   block.textContent = '';
 
+  // fetch footer content
   const footerPath = cfg.footer || '/footer';
-  const resp = await fetch(`${footerPath}.plain.html`);
-  const html = await resp.text();
-  const footer = document.createElement('div');
-  footer.innerHTML = html;
-  await decorateIcons(footer);
-  block.append(footer);
-      // Get the target container to insert the content
-      const targetContainer = document.querySelector('#footer .container .row');
+  const resp = await fetch(`${footerPath}.plain.html`, window.location.pathname.endsWith('/footer') ? { cache: 'reload' } : {});
 
-      // Loop through each h3 and ul elements inside the original div
-      const h3Elements = block.querySelectorAll('h3');
-      const ulElements = block.querySelectorAll('ul');
+  if (resp.ok) {
+    const html = await resp.text();
 
-      for (let i = 0; i < h3Elements.length; i++) {
-        const h3Text = h3Elements[i].innerText;
-        const ul = ulElements[i];
+    // decorate footer DOM
+    const footer = document.createElement('div');
+    footer.innerHTML = html;
 
-        // Create the corresponding elements for [2]
-        const colDiv = document.createElement('div');
-        colDiv.className = 'col-lg-2 col-md-3 col-sm-4 col-xs-12';
+    decorateIcons(footer);
+    block.append(footer);
 
-        const h3Element = document.createElement('h3');
-        h3Element.className = 'ftr-head mt-xs-20';
-        h3Element.innerText = h3Text;
+    // Create a new <div> element
+    const newElement = document.createElement('div');
+    newElement.className = 'freeflowhtml aem-GridColumn aem-GridColumn--default--12';
 
-        const ulElement = document.createElement('ul');
-        ulElement.className = 'list-unstyled footer-txt';
+    // Set the HTML content for the new element
+    newElement.innerHTML = `
+      <footer id="footer">
+          <article>
+              <div class="container pt50 pb50">
+                  <div class="row">
+                //inner html comes here
+              </div>
+          </article>
+      </footer>
+    `;
 
-        // Loop through each li element inside the ul
-        const liElements = ul.querySelectorAll('li');
-        for (let j = 0; j < liElements.length; j++) {
-          const liText = liElements[j].innerText;
-          const liLink = liElements[j].querySelector('a').href;
+    const footerContainer = newElement.querySelector('.row');
 
-          const liElement = document.createElement('li');
-          const aElement = document.createElement('a');
-          aElement.setAttribute('aria-label', `Go to ${liText} Page`);
-          aElement.setAttribute('href', liLink);
-          aElement.setAttribute('title', liText);
-          aElement.innerText = liText;
+    [...block.children].forEach((item) => {
+      const column = document.createElement('div');
+      column.className = 'col-lg-2 col-md-3 col-sm-4 col-xs-12';
+      const h3Element = document.querySelector("#footer h3.ftr-head");
+      // Get the li element
+      const liElement = document.querySelector("#footer li");
+     if (liElement) {
+                const link = liElement.querySelector('a');
+                const linkText = link ? link.textContent : "Link not found!";
+                const href = link ? link.getAttribute('href') : "Href not found!";
+                const title = link ? link.getAttribute('title') : "Title not found!";
+                const label = link ? link.getAttribute('aria-label') : "Label not found!";
+            } else {
+                console.log("li element not found!");
+            }
+      // Read the content of h3 and li
+      const h3Content = h3Element ? h3Element.textContent : "h3 element not found!";
+      column.innerHTML = `
+        <h3 class="ftr-head mt-xs-20">${h3Content}</h3>
+                            <ul class="list-unstyled footer-txt">
+                                <li><a aria-label="${label}" href="${href}" title="${title}">${linkText}</a></li>
+                                </ul>
+      `;
 
-          liElement.appendChild(aElement);
-          ulElement.appendChild(liElement);
-        }
-
-        colDiv.appendChild(h3Element);
-        colDiv.appendChild(ulElement);
-        targetContainer.appendChild(colDiv);
-      }
+      footerContainer.appendChild(column);
+      });
+  }
 }
-
-
-
