@@ -43,9 +43,9 @@ export default async function decorate(block) {
     [...block.children].forEach((item) => {
       const column = document.createElement('div');
       column.className = 'col-lg-2 col-md-3 col-sm-4 col-xs-12';
-      const h3Element = document.querySelector("#footer h3.ftr-head");
+      const h3Element = document.querySelector("h3.ftr-head");
       // Get the li element
-      const liElement = document.querySelector("#footer ui>li");
+      const liElement = document.querySelector("ui>li");
      if (liElement) {
                 const link = liElement.querySelector('a');
                 const linkText = link ? link.textContent : "Link not found!";
