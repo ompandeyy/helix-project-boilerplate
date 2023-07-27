@@ -46,10 +46,12 @@ export default async function decorate(block) {
       const h3Element = item.querySelector("h3");
       // Get the li element
       const liElement = item.querySelector("li");
+      const linkText;
+      const href;
      if (liElement) {
                 const link = liElement.querySelector('a');
-                const linkText = link ? link.textContent : "Link not found!";
-                const href = link ? link.getAttribute('href') : "Href not found!";
+                linkText = link ? link.textContent : "Link not found!";
+                href = link ? link.getAttribute('href') : "Href not found!";
                 //const title = link ? link.getAttribute('title') : "Title not found!";
                 //const label = link ? link.getAttribute('aria-label') : "Label not found!";
             } else {
