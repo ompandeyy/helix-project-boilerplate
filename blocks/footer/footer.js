@@ -67,6 +67,7 @@ export default async function decorate(block) {
       `;
 
       footerContainer.appendChild(column);
+      block.append(footerContainer);
       });
   }
 }
