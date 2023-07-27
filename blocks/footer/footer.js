@@ -50,8 +50,8 @@ export default async function decorate(block) {
                 const link = liElement.querySelector('a');
                 const linkText = link ? link.textContent : "Link not found!";
                 const href = link ? link.getAttribute('href') : "Href not found!";
-                const title = link ? link.getAttribute('title') : "Title not found!";
-                const label = link ? link.getAttribute('aria-label') : "Label not found!";
+                //const title = link ? link.getAttribute('title') : "Title not found!";
+                //const label = link ? link.getAttribute('aria-label') : "Label not found!";
             } else {
                 console.log("li element not found!");
             }
@@ -60,7 +60,7 @@ export default async function decorate(block) {
       column.innerHTML = `
         <h3 class="ftr-head mt-xs-20">${h3Content}</h3>
                             <ul class="list-unstyled footer-txt">
-                                <li><a aria-label="${label}" href="${href}" title="${title}">${linkText}</a></li>
+                                <li><a aria-label="${linkText}" href="${href}" title="${linkText}">${linkText}</a></li>
                                 </ul>
       `;
 
