@@ -1,10 +1,10 @@
 
 (function () {
     let d = {}
-    let target_ELEMENT = document.querySelector(".title-description-wrapper")
-    target_ELEMENT.classList.add('titledescription','aem-GridColumn','aem-GridColumn--default--12')
+    let targetElement = document.querySelector(".title-description-wrapper")
+    targetElement.classList.add('titledescription','aem-GridColumn','aem-GridColumn--default--12')
 
-    let new_ELEMENT = (d) => {
+    let newElement = (d) => {
         return `<section class="pt75">
                     <article class="container">
                         <div class="row">
@@ -17,11 +17,12 @@
                     </article>
                 </section>`
     }
-    let block_DATA = target_ELEMENT.querySelectorAll('.title-description.block > div > div')
-    d.imgsrc=block_DATA[0].querySelector('img').src
-    d.heading=block_DATA[1].textContent
-    d.para=block_DATA[2].textContent
-    target_ELEMENT.innerHTML=new_ELEMENT(d)
+    let blockData = targetElement.querySelectorAll('.title-description.block > div > div')
+    d.imgsrc=blockData[0].querySelector('img').src
+    d.heading=blockData[1].textContent
+    d.para=blockData[2].textContent
+    console.log(d)
+    targetElement.innerHTML=newElement(d)
 })();
 
 
