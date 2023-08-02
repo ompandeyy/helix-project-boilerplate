@@ -701,6 +701,10 @@ async function loadLazy(doc) {
  */
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
-  window.setTimeout(() => import('./delayed.js'), 3000);
+  import('./jquery/jquery-3.7.0.js')
+  import('./owl-carousel-js/owl.carousel.min.js')
+  window.setTimeout(() => {
+    import('./delayed.js')
+  }, 2000);
   // load anything that can be postponed to the latest here
 }
