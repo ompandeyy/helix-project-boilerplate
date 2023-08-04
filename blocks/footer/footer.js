@@ -61,77 +61,77 @@ export default async function decorate(block) {
 
    var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
 
-    for(let i = 0; i < counter;i++){
+    for(let i = 0; i < document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;i++){
         var footerContentDiv = document.createElement('div');
         sixthDiv.appendChild(footerContentDiv);
         footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');  
-
         var footerContentHeader = document.createElement('h3');
-        var footerUl = document.createElement('ul');
-          
+         var footerUl = document.createElement('ul');
+             footerContentDiv.appendChild(footerContentHeader);
   if(i == 0){
-            footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-            footerContentHeader.innerHTML = footerContHead;
-            footerContentHeader.appendChild(footerUl);
-            footerUl.classList.add('list-unstyled', 'footer-txt');      
-      var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
-      var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
-      footerUlTwo.append(liContentFooterTwo);
+            footerContentHeader.innerHTML = footerContHead;    
+     var footerUlTwo = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+     var liContentFooterTwo = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
+      liContentFooterTwo.classList.add('list-unstyled', 'footer-txt'); 
+      footerUlTwo[i].append(liContentFooterTwo);
+     // footerContentHeader.appendChild(footerUlTwo[i]); 
    }
-   else if(i == 1){
-        footerContentDiv.appendChild(footerContentHeader);
+    
+        
+   else if(i == 1){footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
-     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-            footerContentHeader.innerHTML = footerContHead;
-            footerContentHeader.appendChild(footerUl);
-            footerUl.classList.add('list-unstyled', 'footer-txt');      
+     var footerContHeadOne = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
+        footerContentHeader.innerHTML = footerContHeadOne;
+                    var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');   
       var liContentFooterThree = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[i];
-      var footerUlThree = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
-      footerUlThree.append(liContentFooterThree);
+       
+       liContentFooterThree.classList.add('list-unstyled', 'footer-txt');   
+       footerUlThree[i].append(liContentFooterThree);
+       // footerContentHeader.appendChild(footerUlThree[i]);
  } 
-    if(i == 2){
-      footerContentDiv.appendChild(footerContentHeader);
+    if(i == 2){footerContentDiv.appendChild(footerContentHeader);
        footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
-      footerContentHeader.innerHTML = footerContHead;
-      footerContentHeader.appendChild(footerUl);
-      footerUl.classList.add('list-unstyled', 'footer-txt');  
+        footerContentHeader.innerHTML = footerContHead;
       var liContentFooterFour = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
-      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
-      footerUlFour.append(liContentFooterFour);
+      var footerUlFour = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+      liContentFooterFour.classList.add('list-unstyled', 'footer-txt');
+      footerUlFour[i].append(liContentFooterFour);
+      // footerContentHeader.appendChild(footerUlFour[i]);
+     
   }
-    else if(i == 3){
-      footerContentDiv.appendChild(footerContentHeader);
+    else if(i == 3){footerContentDiv.appendChild(footerContentHeader);
        footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
      footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
       var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
         footerContentHeader.innerHTML = footerContHead;
-        footerContentHeader.appendChild(footerUl);
-       footerUl.classList.add('list-unstyled', 'footer-txt'); 
       var liContentFooterFive = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
-      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i];
-      footerUlFive.append(liContentFooterFive);
+      var footerUlFive = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+       liContentFooterFive.classList.add('list-unstyled', 'footer-txt'); 
+      footerUlFive[i].append(liContentFooterFive);
+      // footerContentHeader.appendChild(footerUlFive[i]);
+      
   }
-  else if(i == 4){
-            footerContentDiv.appendChild(footerContentHeader);
+  else if(i == 4){footerContentDiv.appendChild(footerContentHeader);
             footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
     var footerContHead = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > h3')[i].innerText;
             footerContentHeader.innerHTML = footerContHead;
-            footerUl.classList.add('list-inline', 'footer-txt');
-             footerContentHeader.appendChild(footerUl);
-      // var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[1];
-      // var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head > ul')[i]
-      // footerUlSix.append(liContentFooterSix);
-  }
+           var liContentFooterSix = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
+      var footerUlSix = document.querySelectorAll('#footer > article > .container > .row > div > .ftr-head');
+       liContentFooterSix.classList.add('list-inline', 'footer-txt'); 
+      footerUlSix[i].append(liContentFooterSix);
       
-    }
+                 }
+       } 
+
   }
 }
+
 
 
 
