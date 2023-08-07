@@ -24,7 +24,7 @@ export default async function decorate(block) {
   //hiding content
    var footerContent = document.querySelector('.footer-wrapper > .footer.block > div');
     footerContent.style.display = 'none';
-   console.log(footerContent);
+   //console.log(footerContent);
     
     var mainFooter = document.querySelector('.footer-wrapper > .footer.block');
     mainFooter.setAttribute('class','experiencefragment');
@@ -58,10 +58,10 @@ export default async function decorate(block) {
     var sixthDiv = document.createElement('div');
     sixthDiv.setAttribute('class','row');
     fifthDiv.appendChild(sixthDiv);
-
+    
    var counter = document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;
 
-    for(let i = 0; i < document.querySelectorAll('.footer-wrapper > .experiencefragment  > div > div > h3').length;i++){
+    for(let i = 0; i < counter ;i++){
         var footerContentDiv = document.createElement('div');
         sixthDiv.appendChild(footerContentDiv);
         footerContentDiv.classList.add('col-lg-2', 'col-md-3', 'col-sm-4', 'col-xs-12');  
@@ -91,7 +91,7 @@ export default async function decorate(block) {
        footerUlThree[i].append(liContentFooterThree);
        // footerContentHeader.appendChild(footerUlThree[i]);
  } 
-    if(i == 2){footerContentDiv.appendChild(footerContentHeader);
+    else if(i == 2){footerContentDiv.appendChild(footerContentHeader);
        footerContentHeader.classList.add('ftr-head', 'mt-xs-20');
       footerContentDiv.setAttribute('class','col-lg-3');
       footerContentDiv.classList.add('col-lg-3','col-md-3','col-sm-4', 'col-xs-12');
@@ -128,7 +128,120 @@ export default async function decorate(block) {
       
                  }
        } 
+  
+     // copyright starts : 
+    var ftrcopyrightOne = document.createElement('div');
+    ftrcopyrightOne.classList.add('container-fluid', 'ptb15', 'bg-white');
+    footerArticle.appendChild(ftrcopyrightOne);  
 
+    var ftrcopyrightDiv = document.createElement('div');
+    ftrcopyrightDiv.setAttribute('class','container');
+    ftrcopyrightOne.appendChild(ftrcopyrightDiv);
+
+    var ftrcopyrightRowDiv = document.createElement('div');
+    ftrcopyrightRowDiv.setAttribute('class','row');
+    ftrcopyrightDiv.appendChild(ftrcopyrightRowDiv);
+
+    var ftrcopyrightRowFirstDiv = document.createElement('div');
+    ftrcopyrightRowFirstDiv.classList.add('col-lg-7', 'col-md-6', 'col-sm-6', 'col-xs-12');
+    ftrcopyrightRowDiv.appendChild(ftrcopyrightRowFirstDiv);
+
+    var ftrcopyrightRowPara = document.createElement('p');
+    ftrcopyrightRowPara.setAttribute('class','mb0');
+    var ftrCpyrightRowParaContent =  document.querySelector('.footer-wrapper > .experiencefragment  > div > div > div > div > div').innerText;
+    ftrcopyrightRowPara.innerHTML =  ftrCpyrightRowParaContent;
+    ftrcopyrightRowFirstDiv.appendChild(ftrcopyrightRowPara);
+
+    var ftrcopyrightRowSecondDiv = document.createElement('div');
+    ftrcopyrightRowSecondDiv.classList.add('col-lg-5', 'col-md-6', 'col-sm-6', 'col-xs-12');
+    ftrcopyrightRowDiv.appendChild(ftrcopyrightRowSecondDiv);
+      
+    var ftrcopyrightRowThirdDiv = document.createElement('div');
+    ftrcopyrightRowThirdDiv.classList.add('pull-right', 'pull-left-xs', 'mt-xs-20');
+    ftrcopyrightRowSecondDiv.appendChild(ftrcopyrightRowThirdDiv);
+    
+    var ftrcopyrightRowFourthDiv = document.createElement('div');
+    ftrcopyrightRowFourthDiv.setAttribute('class','country');
+    ftrcopyrightRowThirdDiv.appendChild(ftrcopyrightRowFourthDiv);
+
+    var ftrcopyrightRowFifthDiv = document.createElement('div');
+    ftrcopyrightRowFifthDiv.setAttribute('class','select-country');
+    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowFifthDiv);
+
+    var ftrcopyrightAnchor = document.createElement('a');
+    ftrcopyrightAnchor.setAttribute('aria-label','Select Country');
+    var footerAnchorLinkContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[1].innerText;
+    ftrcopyrightAnchor.setAttribute('href',footerAnchorLinkContent);
+    var footerAnchorContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > div > div > div')[2].innerText;
+    ftrcopyrightAnchor.innerHTML = footerAnchorContent + `<span class="down-arrow"></span>`;
+    ftrcopyrightRowFifthDiv.appendChild(ftrcopyrightAnchor);
+ 
+    var ftrcopyrightRowSixDiv = document.createElement('div');
+    ftrcopyrightRowSixDiv.setAttribute('class','option-country');
+   // ftrcopyrightRowSixDiv.setAttribute('onclick','onclck()');
+   // ftrcopyrightRowSixDiv.classList.add('open-country'); 
+    ftrcopyrightRowFourthDiv.appendChild(ftrcopyrightRowSixDiv);
+
+ //   var ftrcopyrightUlContent = document.querySelectorAll('.footer-wrapper > .experiencefragment > div > div > ul')[0];
+    var ftrcopyrightUlContent = document.createElement('ul');
+    ftrcopyrightUlContent.classList.add('list-unstyled', 'country-align'); 
+    ftrcopyrightRowSixDiv.append(ftrcopyrightUlContent);
+    ftrcopyrightUlContent.innerHTML = `
+                                        <li><a aria-label="Go to Australia Page" href="/australia.html">Australia</a></li>
+                                        <li><a aria-label="Go to Austria Page" href="/at-en/">Austria</a></li>
+                                        <li><a aria-label="Go to Belgium Page" href="/be-en/">Belgium</a></li>
+                                        <li><a aria-label="Go to Brazil Page" href="/br/">Brazil</a></li>
+                                        <li><a aria-label="Go to Bulgaria Page" href="/bg-en/">Bulgaria</a></li>
+                                        <li><a aria-label="Go to Canada Page" href="/powering-digital-canada.html">Canada</a></li>
+                                        <li><a aria-label="Go to Chile Page" href="/contact/country.html?region=Americas&amp;subsidiary=Infosys#Chile">Chile</a></li>
+                                        <li><a aria-label="Go to China Page" href="/cn/">China</a></li>
+                                        <li><a aria-label="Go to Costa Rica Page" href="/contact/country.html?region=Americas&amp;subsidiary=Infosys#Costa%2520rica">Costa Rica</a></li>
+                                        <li><a aria-label="Go to Croatia Page" href="/hr-en/">Croatia</a> </li>
+                                        <li><a aria-label="Go to Czech Page" href="/cz-en/">Czech</a> </li>
+                                        <li><a aria-label="Go to Denmark Page" href="/dk-en/">Denmark</a> </li>
+                                        <li><a aria-label="Go to Estonia Page" href="/ee-en/">Estonia</a> </li>
+                                        <li><a aria-label="Go to Finland Page" href="/fi-en/">Finland</a> </li>
+                                        <li><a aria-label="Go to France Page" href="/fr-en/">France</a> </li>
+                                        <li><a aria-label="Go to Germany Page" href="/de/">Germany</a> </li>
+                                        <li><a aria-label="Go to Hong Kong Page" href="/hk-en.html">Hong Kong</a></li>
+                                        <li><a aria-label="Go to Hungary Page" href="/hu-en/">Hungary</a> </li>
+                                        <li><a aria-label="Go to India Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#India">India</a></li>
+                                        <li><a aria-label="Go to Ireland Page" href="/ie-en/">Ireland</a> </li>
+                                        <li><a aria-label="Go to Italy Page" href="/it-en/">Italy</a> </li>
+                                        <li><a aria-label="Go to Japan Page" href="/jp/">Japan</a> </li>
+                                        <li><a aria-label="Go to Liechtenstein Page" href="/contact/country.html?region=Europe&amp;subsidiary=Infosys#Liechtenstein">Liechtenstein</a> </li>
+                                        <li><a aria-label="Go to Latvia Page" href="/lv-en/">Latvia</a> </li>
+                                        <li><a aria-label="Go to Lithuania Page" href="/lt-en/">Lithuania</a> </li>
+                                        <li><a aria-label="Go to Luxembourg Page" href="/lu-en/">Luxembourg</a> </li>
+                                        <li><a aria-label="Go to Malaysia Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Malaysia">Malaysia</a></li>
+                                        <li><a aria-label="Mauritius" href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#Mauritius">Mauritius</a></li>
+                                        <li><a aria-label="Go to Mexico Page" href="/mx/">Mexico</a> </li>
+                                        <li><a aria-label="Go to New Zealand Page" href="/australia.html">New Zealand</a></li>
+                                        <li><a aria-label="Go to Norway Page" href="/no-en/">Norway</a> </li>
+                                        <li><a aria-label="Go to Peru Page" href="/contact/country.html?region=Americas&amp;subsidiary=Infosys#Peru">Peru</a></li>
+                                        <li><a aria-label="Go to Philippines Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Philippines">Philippines</a></li>
+                                        <li><a aria-label="Go to Poland Page" href="/pl-en/">Poland</a> </li>
+                                        <li><a aria-label="Go to Portugal Page" href="/pt-en/">Portugal</a> </li>
+                                        <li><a aria-label="Go to Romania Page" href="/ro-en/">Romania</a> </li>
+                                        <li><a aria-label="Go to Russia Page" href="/ru-en/">Russia</a> </li>
+                                        <li><a aria-label="Go to Singapore Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Singapore">Singapore</a>  </li>
+                                        <li><a aria-label="Go to Slovakia Page" href="/sk-en/">Slovakia</a> </li>
+                                        <li><a aria-label="Go to Slovenia Page" href="/sl-en/">Slovenia</a> </li>
+                                        <li><a aria-label="South Africa" href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#South%20Africa">South Africa</a></li>
+                                        <li><a aria-label="South Korea" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#South%20Korea">South Korea</a></li>
+                                        <li><a aria-label="Go to Spain Page" href="/es-en/">Spain</a> </li>
+                                        <li><a aria-label="Go to Sweden Page" href="/se-en/">Sweden</a> </li>
+                                        <li><a href="/ch-en/" title="Switzerland">Switzerland</a></li>
+                                        <li><a aria-label="Go to Taiwan Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Taiwan">Taiwan</a> </li>
+                                        <li><a aria-label="Go to Netherlands Page" href="/nl-en/">The Netherlands</a> </li>
+                                        <li><a aria-label="Go to Arab Emirates Page" href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#United%20Arab%20Emirates">United Arab Emirates</a></li>
+                                        <li><a aria-label="Go to UK Page" href="/gb-en/">United Kingdom (UK)</a></li>
+                                        <li><a aria-label="Go to Americas Page" href="/americas.html">United States</a></li>
+                                  `;
+   
+    
+    
+    // //copyright ends :
   }
 }
 
