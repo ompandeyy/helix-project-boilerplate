@@ -2,7 +2,7 @@
     var mainDiv = document.querySelector('.dx-text-media');
     
      mainDiv.setAttribute('class','freeflowhtml');
-    var mainClassHeading =  document.querySelectorAll('.freeflowhtml > div > div')[0].textContent;
+    var mainClassHeading =  document.querySelectorAll('.dx-text-media-wrapper > .freeflowhtml > div > div')[0].textContent;
       //adding classNames to main Div
       mainDiv.classList.add('aem-GridColumn','aem-GridColumn--default--12');
    
@@ -46,11 +46,11 @@
     InsideContainerFirstDiv.appendChild(InsideContainerSecondDiv);
 
     //Getting div container presented from plain.html For Hiding
-    var InsideMainDiv = document.querySelector('.freeflowhtml > div');
+    var InsideMainDiv = document.querySelector('.dx-text-media-wrapper > .freeflowhtml > div');
     //Hiding the Inside Main Div From Plain Html
     InsideMainDiv.style.display = 'none';
-     var paraContent = document.querySelectorAll('.freeflowhtml > div > div')[1].textContent;
-     var videoUrl = document.querySelectorAll(".freeflowhtml > div > div")[2].textContent;
+     var paraContent = document.querySelectorAll('.dx-text-media-wrapper > .freeflowhtml > div > div')[1].textContent;
+     var videoUrl = document.querySelectorAll(".dx-text-media-wrapper > .freeflowhtml > div > div")[2].textContent;
     var InsideRowFirstDiv = document.createElement('div');
     //adding class to row Div
     InsideRowFirstDiv.classList.add('col-md-6','col-sm-12','col-xs-12','mb-sm-20','wow','fadeInLeft','animated');   
