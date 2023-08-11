@@ -1,5 +1,5 @@
 /* header and nav layout */
-header nav {
+/* header nav {
   display: grid;
   grid-template:
     'hamburger brand tools' var(--nav-height)
@@ -24,10 +24,10 @@ header nav[aria-expanded='true'] {
   grid-template-columns:  56px 1fr;
   overflow-y: scroll;
   min-height: 100vh;
-}
+} */
 
 /* brand */
-header .nav-brand {
+/* header .nav-brand {
   grid-area: brand;
   font-size: 22px;
   font-weight: 700;
@@ -41,10 +41,10 @@ header nav .nav-brand p {
 header nav .nav-brand img {
   width: 128px;
   height: auto;
-}
+} */
 
 /* hamburger */
-header nav .nav-hamburger {
+/* header nav .nav-hamburger {
   grid-area: hamburger;
   height: 22px;
   padding-top: 3px;
@@ -103,10 +103,10 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::before {
 
 header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   transform: rotate(-45deg)
-}
+} */
 
 /* sections */
-header nav .nav-sections {
+/* header nav .nav-sections {
   grid-area: sections;
   flex-direction: column;
   display: none;
@@ -129,10 +129,10 @@ header nav .nav-sections li {
 header nav[aria-expanded='true'] .nav-sections {
   display: block;
   align-self: flex-start;
-}
+} */
 
 /* tools */
-header nav .nav-tools {
+/* header nav .nav-tools {
   grid-area: tools;
   flex: 0 0 auto;
   height: 22px;
@@ -153,10 +153,10 @@ header nav[aria-expanded='true'] .nav-tools ul {
 
 header nav[aria-expanded='true'] .nav-tools li {
   padding: 0;
-}
+} */
 
 /* desktop nav styles */
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -257,4 +257,4 @@ header nav[aria-expanded='true'] .nav-tools li {
     padding: 16px;
     box-shadow: 0 0 5px var(text-color);
   }
-}
+} */
