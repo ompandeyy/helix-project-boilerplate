@@ -41,7 +41,7 @@ export default function decorate(block) {
   column.style.mozAnimationDelay = '0.3s';
   column.style.animationDelay = '0.3s';
 
-  const imageSrc = story.querySelector('img').getAttribute('src');
+  const imageSrc = story.querySelector('picture').children[0].srcset;
   const imageAlt = story.querySelector('img').getAttribute('alt');
   const description = story.querySelector('div').textContent;
 

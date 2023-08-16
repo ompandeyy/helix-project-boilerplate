@@ -1,4 +1,3 @@
-(function () {
   let actualData = [];
   let targetElement = document.querySelector(".teaser-carousel-wrapper");
   targetElement.classList.add(
@@ -52,4 +51,3 @@
             </div>`;
   };
   targetElement.innerHTML = newElement(actualData);
-})();

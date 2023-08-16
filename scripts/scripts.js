@@ -700,11 +700,53 @@ async function loadLazy(doc) {
  * the user experience.
  */
 function loadDelayed() {
+  let app = {}
   // eslint-disable-next-line import/no-cycle
-  import('./jquery/jquery-3.7.0.js')
-  import('./owl-carousel-js/owl.carousel.min.js')
-  window.setTimeout(() => {
-    import('./delayed.js')
-  }, 2000);
+
+  app.thirdPartyScript=()=>{
+    loadScript("jquery-script",envUrl()+"/scripts/jquery/jquery-3.7.0.js").then(()=>{
+        loadScript("owl-carousel-script",envUrl()+"/scripts/owl-carousel-js/owl.carousel.min.js").then(()=>{
+            window.setTimeout(() => {
+              import('./delayed.js')
+            }, 500);
+        }).catch(()=>{})
+    }).catch(()=>{})
+  }
+
+  app.thirdPartyScript()
   // load anything that can be postponed to the latest here
 }
+
+
+
+// custom scripts 
+export function envUrl() {
+  let origin = window.location.origin
+  return origin
+}
+
+export function loadScript(e, src, h = false, attr = {}){
+if (!document.getElementById(e)) {
+  let s = document.createElement("script");
+  (s.type = "text/javascript"),(s.src = src),(s.id = e),(s.async = true);
+  for (const key in attr) {
+    s.setAttribute(key, attr[key]);
+  }
+  h ? document.head.appendChild(s) : document.body.appendChild(s);
+
+  return new Promise((res, rej) => {
+    s.onload = function () {
+      res();
+    };
+    s.onerror = function () {
+      rej();
+    };
+  });
+} else {
+  return new Promise((res, rej) => {
+    res();
+  });
+}
+};
+
+

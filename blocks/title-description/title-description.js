@@ -1,5 +1,4 @@
 
-(function () {
     let d = {}
     let targetElement = document.querySelector(".title-description-wrapper")
     targetElement.classList.add('titledescription','aem-GridColumn','aem-GridColumn--default--12')
@@ -21,8 +20,6 @@
     d.imgsrc=blockData[0].querySelector('img').src
     d.heading=blockData[1].textContent
     d.para=blockData[2].textContent
-    console.log(d)
     targetElement.innerHTML=newElement(d)
-})();
 
 

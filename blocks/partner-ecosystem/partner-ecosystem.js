@@ -36,7 +36,7 @@ const logosContainer = newElement.querySelector('.row.d-flex');
 export default function decorate(block) {
 [...block.children].forEach((logo, index) => {
   const logoUrl = logo.nextElementSibling.textContent;
-  const imageUrl = logo.querySelector('img').getAttribute('src');
+  const imageUrl = logo.querySelector('picture').children[0].srcset;
   const imageAlt = logo.querySelector('img').getAttribute('alt');
 
   const logoElement = document.createElement('div');
