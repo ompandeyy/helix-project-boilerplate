@@ -46,7 +46,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    insightContentDiv.classList.add('col-md-6', 'col-sm-12', 'col-xs-12', 'p0');
     var blockDataImg = document.querySelectorAll('.insights > div');
     var blockData = document.querySelectorAll('.insights > div > div');
-    var imgsrc = blockDataImg[0].querySelector('img').src;
+    var imgsrc = blockDataImg[0].querySelector('picture').children[0].srcset;
     var commonAnchor = document.createElement('a'); 
     var commonDiv = document.createElement('div');
     var commonMainDiv = document.createElement('div');
@@ -117,7 +117,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
   
  if(i == 2){
 
-    var imgsrcOne = document.querySelectorAll('.insights > div')[1].querySelector('img').src;
+    var imgsrcOne = document.querySelectorAll('.insights > div')[1].querySelector('picture').children[0].srcset;
 
     var dataOne = document.querySelectorAll('#insights >.container > .row > div')[1];
     var InsightTwoheading = document.querySelectorAll('.insights > div > div')[5].textContent;
@@ -298,7 +298,7 @@ var commonImgclass , commonHeaderClass , commonParagraphClass , commonClassOne ,
    commonInsightTwoMainThrdDiv.appendChild(commonInsightTwoSubParagraph);
  } else  if(i == 6){
 
-    var imgsrcSix = document.querySelectorAll('.insights > div')[5].querySelector('img').src;
+    var imgsrcSix = document.querySelectorAll('.insights > div')[5].querySelector('picture').children[0].srcset;
 
     var dataFive = document.querySelectorAll('#insights >.container > .row > div')[5];
     var InsightTwoheading = document.querySelectorAll('.insights > div > div')[22].textContent;
