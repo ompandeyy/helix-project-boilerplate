@@ -227,10 +227,18 @@ export default async function decorate(block) {
 	</div>
 
      `;
+
+	  
 	  //progressbar Div creation
-	  // var navProgressBarDX = document.createElement('div');
-	  // navProgressBarDX.setAttribute('class','progressbar');
-	  // navProgressBarDX.setAttribute('aria-label','Page progress bar');
+	  var navProgressBarDX = document.createElement('div');
+	  navProgressBarDX.setAttribute('class','progressbar');
+	  navProgressBarDX.setAttribute('aria-label','Page' + ' progress' + ' bar');
+	  getMainNav.appendChild(navProgressBarDX);
+	// creating div inside progressbar 
+	  var navProgressBarDXDiv = document.createElement('div');
+	  navProgressBarDXDiv.setAttribute('class','width');
+	  navProgressBarDX.appendChild(navProgressBarDXDiv);
+
 	  
     // var searchNavDXImg = document.querySelector('.nav-wrapper > #nav > div > p > span ').innerHTML;
     // searchDX.appendChild(searchNavDXImg);
@@ -238,7 +246,7 @@ export default async function decorate(block) {
 	// Bread-Crumb Code Starts 
 	  var breadcrumbDX = document.createElement('div');
 	  breadcrumbDX.classList.add('responsivegrid', 'aem-GridColumn', 'aem-GridColumn--default--12');
-	  var insideBreadcrumbDX = document.querySelector('.dx-breadcrumb-wrapper > .dx-breadcrumb.block');
+	  var insideBreadcrumbDX = document.querySelector('.header-wrapper');
 	  insideBreadcrumbDX.appendChild(breadcrumbDX);
 
 	  var insideBreadcrumbDXFirstDiv = document.createElement('div');
@@ -302,6 +310,7 @@ export default async function decorate(block) {
 	  
 	   var insideDXInsideArticlefourthDIV = document.createElement('div');
 	  insideDXInsideArticlefourthDIV.setAttribute('class','hero-list');
+	  insideDXInsideArticlefourthDIV.classList.add('hero-list1');
 	  insideDXInsideArticleThirdDIV.appendChild(insideDXInsideArticlefourthDIV);
 
 	  var insideDXInsideNavMain = document.createElement('nav');
@@ -312,11 +321,11 @@ export default async function decorate(block) {
 	  insideDXOLDIV.classList.add('breadcrumb', 'rmv-breadcrum', 'navbar-left', 'hidden-tab');
 	  insideDXInsideNavMain.appendChild(insideDXOLDIV);
 
-	var docContentDX = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[4].innerText;
-	var docContentNextDx = document.querySelectorAll('.nav-wrapper > #nav > div > .nav-logo-list > div > div')[5].innerText;
+	var docContentDX = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[0].innerText;
+	var docContentNextDx = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[1].innerText;
 
 	var insideDXOLLIDIV = document.createElement('li');
-	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown', 'open');
+	  insideDXOLLIDIV.classList.add('dropdown', 'mega-dropdown');
 	  insideDXOLDIV.appendChild(insideDXOLLIDIV);
 
 	  var insideDXOLLIAnchorONe = document.createElement('a');
@@ -327,233 +336,316 @@ export default async function decorate(block) {
 	
 	  insideDXOLLIAnchorONe.innerHTML = docContentDX + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
 	   insideDXOLLIDIV.innerHTML = `
-   						<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
-								 
-
+   				<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
                                     <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-									<ul>
-                                   <li class="dropdown-header">
-
-                                   
-
-                                                                            
-                                       <span>
-                                      
-                                       </span>
-
-                                       
-
-                                    </li>
-                                   
-									<!-- divider class removed due to issue in aboutus page-->
-                                    
-                                       <li>
-                                          <a title="Enterprise Agile DevOps" href="/services/agile-devops.html">Enterprise Agile DevOps
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Applied AI" href="/services/applied-ai.html">Applied AI
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="API Economy &amp; Microservices" href="/services/api-economy.html">API Economy &amp; Microservices
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Application Development and Maintenance " href="/services/application-development-maintenance.html">Application Development and Maintenance 
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Application Modernization" href="/services/application-modernization.html">Application Modernization
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Blockchain" href="/services/blockchain.html">Blockchain
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Cloud - Infosys Cobalt" href="/services/cloud-cobalt.html">Cloud - Infosys Cobalt
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Consulting Services" href="/services/consulting.html">Consulting Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Cyber Security" href="/services/cyber-security.html">Cyber Security
-                                          </a>
-                                       </li>
-                                    
-									</ul>
-                                  </li>
-								 
-
-                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-									<ul>
-                                   <li class="dropdown-header">
-
-                                   
-
-                                                                            
-                                       <span>
-                                      
-                                       </span>
-
-                                       
-
-                                    </li>
-                                   
-									<!-- divider class removed due to issue in aboutus page-->
-                                    
-                                       <li>
-                                          <a title="Data Analytics" href="/services/data-analytics.html">Data Analytics
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Commerce" href="/services/digital-commerce.html">Digital Commerce
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Interactions" href="/services/digital-interaction.html">Digital Interactions
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Marketing" href="/services/digital-marketing.html">Digital Marketing
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Experience" href="/services/digital-experience.html">Digital Experience
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Process Automation" href="/services/digital-process-automation.html">Digital Process Automation
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Supply Chain" href="/services/digital-supply-chain.html">Digital Supply Chain
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Digital Workplace Services" href="/services/digital-workplace-services.html">Digital Workplace Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Infosys Metaverse Foundry" href="/services/metaverse.html">Infosys Metaverse Foundry
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Infosys Generative AI Labs" href="/services/generative-ai.html">Infosys Generative AI Labs
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Infosys Topaz" href="/services/data-ai-topaz.html">Infosys Topaz
-                                          </a>
-                                       </li>
-                                    
-									</ul>
-                                  </li>
-								 
-
-                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-									<ul>
-                                   <li class="dropdown-header">
-
-                                   
-
-                                                                            
-                                       <span>
-                                      
-                                       </span>
-
-                                       
-
-                                    </li>
-                                   
-									<!-- divider class removed due to issue in aboutus page-->
-                                    
-                                       <li>
-                                          <a title="Energy Transition" href="/services/energy-transition.html">Energy Transition
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Engineering Services" href="/services/engineering-services.html">Engineering Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Incubating Emerging Offerings" href="/services/incubating-emerging-technologies.html">Incubating Emerging Offerings
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Testing" href="/services/validation-solutions.html">Testing
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Microsoft Business Application Services" href="/services/microsoft-dynamics.html">Microsoft Business Application Services
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Microsoft Cloud Business" href="/services/microsoft-cloud-business.html">Microsoft Cloud Business
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Oracle" href="/services/oracle.html">Oracle
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Salesforce" href="/services/salesforce.html">Salesforce
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="SAP" href="/services/sap.html">SAP
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Service Experience Transformation" href="/services/experience-transformation.html">Service Experience Transformation
-                                          </a>
-                                       </li>
-                                    
-                                       <li>
-                                          <a title="Workplace Transformation" href="/services/microsoft-cloud-business/offerings/digital-workplace-services.html">Workplace Transformation
-                                          </a>
-                                       </li>
-                                    
-									</ul>
-                                  </li>
-								 
-								 </ul>
+				    	<ul>
+	                                   <li class="dropdown-header">            
+	                                       <span>
+					       </span>
+	                                    </li>
+                                 <!-- divider class removed due to issue in aboutus page-->
+	                                       <li>
+	                                          <a title="Enterprise Agile DevOps" href="/services/agile-devops.html">Enterprise Agile DevOps
+	                                          </a>
+	                                       </li>
+	                                       <li>
+	                                          <a title="Applied AI" href="/services/applied-ai.html">Applied AI
+	                                          </a>
+	                                       </li>
+					</ul>
+ 				   </li>
+			     </ul>
    					`;
 	  
  	 	insideDXOLLIDIV.appendChild(insideDXOLLIAnchorONe);
+	  
+	  var insideDXOLLISecondDIV = document.createElement('li');
+	  insideDXOLLISecondDIV.classList.add('dropdown', 'mega-dropdown');
+	  insideDXOLDIV.appendChild(insideDXOLLISecondDIV);
+
+	  var insideDXOLLIAnchorTwo = document.createElement('a');
+	  insideDXOLLIAnchorTwo.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchorTwo.classList.add('dropdown-toggle', 'disabled');
+	  insideDXOLLIAnchorTwo.setAttribute('data-toggle', 'dropdown');
+	  insideDXOLLIAnchorTwo.setAttribute('aria-expanded', 'false');
+	
+	  insideDXOLLIAnchorTwo.innerHTML = docContentNextDx + `<i class="fa fa-chevron-circle-down reverseArrow" aria-hidden="true"></i>`;
+	   insideDXOLLISecondDIV.innerHTML = `
+					<ul class="dropdown-menu mega-dropdown-menu row" style="display: none;">
+                                          <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                             <ul>
+                                                  <li>
+                                                      <a title="Digital Experience Home" href="/services/digital-experience.html">Digital Experience Home</a>
+                                                   </li>
+                                                   <li>
+                                                      <a title="Overview" href="/services/digital-experience/overview.html">Overview</a>
+                                                   </li>
+	  					</ul>
+					    </li>
+	 				</ul>
+      					`;
+	  insideDXOLLISecondDIV.appendChild(insideDXOLLIAnchorTwo);
+
+	  //second ol for breadcrumb nav
+	  var insideDXOLSecondDIV = document.createElement('ol');
+	  insideDXOLSecondDIV.classList.add('navbar-right', 'list-inline', 'hidden-list', 'sticky-icons', 'visible-list');
+	  insideDXInsideArticlefourthDIV.appendChild(insideDXOLSecondDIV);
+
+	  
+	  var insideDXOLLISecondDIV = document.createElement('li');
+	  insideDXOLLISecondDIV.classList.add('trigger-share');
+	  insideDXOLSecondDIV.appendChild(insideDXOLLISecondDIV);
+	  
+	  var insideDXOLLIAnchorSecond = document.createElement('a');
+	  insideDXOLLIAnchorSecond.setAttribute('href', 'javascript:void(0);');
+	  insideDXOLLIAnchorSecond.classList.add('aria-label', 'Share');
+	  insideDXOLLIAnchorSecond.setAttribute('aria-expanded', 'false');
+	  insideDXOLLISecondDIV.appendChild(insideDXOLLIAnchorSecond);
+
+	  var insideDXImgElemSrcOne = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[4].innerText;
+
+	  var insideDXImgElem = document.createElement('img');
+	  insideDXImgElem.setAttribute('src',insideDXImgElemSrcOne);
+	  insideDXImgElem.setAttribute('alt','Share');
+	  insideDXImgElem.setAttribute('class','share-icon');
+	  insideDXOLLIAnchorSecond.appendChild(insideDXImgElem);
+	  
+	   var insideDXULLIDIVOne = document.createElement('ul');
+	  insideDXULLIDIVOne.classList.add('social-share', 'hidden-list', 'list-inline');
+	  insideDXULLIDIVOne.style.opacity = '1';
+	  insideDXOLLISecondDIV.appendChild(insideDXULLIDIVOne);
+	  insideDXULLIDIVOne.innerHTML =  `
+				<li>
+					<a href="javascript:void(0)" onclick="twitterShare(window.location.href, encodeURIComponent(document.title));" class="share" aria-label="ShareByTwitter"> 
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="var host=window.location.href;
+					var fbUrl = 'http://www.facebook.com/sharer/sharer.php?s=100&amp;u='.concat(host);
+					var width=500, height=500;
+					var left = (window.screen.width / 2) - ((width / 2) + 10);
+		    		var top = (window.screen.height / 2) - ((height / 2) + 50);
+					popUp = window.open(fbUrl,'popupwindow','scrollbars=no,width='+ width +',height='+ height +',top='+ top +', left='+ left +'');
+					popUp.focus();
+					return false" class="share" aria-label="ShareByFaceBook">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="var host=window.location.href; var title = document.title;
+						var liUrl = 'http://www.linkedin.com/shareArticle?mini=true&amp;url='.concat(host);
+						var width=500, height=500;
+		
+		                var left = (window.screen.width / 2) - ((width / 2) + 10);
+		    			var top = (window.screen.height / 2) - ((height / 2) + 50);
+						popUp = window.open(encodeURI(liUrl),'popupwindow','scrollbars=no,width='+ width +',height='+ height +',top='+ top +', left='+ left +'');
+						popUp.focus();
+						return false" class="share" aria-label="ShareByLinkedIn">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+		
+			</ul>
+		 		  `; 
+
+	  		
+	  var insideDXOLLIThirdDIV = document.createElement('li');
+	  insideDXOLLIThirdDIV.classList.add('hidden-tab');
+	  insideDXOLLIThirdDIV.setAttribute('id','like-what-you-see');
+	  insideDXOLSecondDIV.appendChild(insideDXOLLIThirdDIV);
+	  
+	  var dxBreadcrumbContentDIVThirdone = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[2].innerText;
+	  var dxBreadcrumbContentDIVThirdTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[3].innerText;
+	  
+	  var insideDXOLLIThirdspan = document.createElement('span');
+	  insideDXOLLIThirdspan.classList.add('block', 'career-block');
+	  insideDXOLLIThirdDIV.appendChild(insideDXOLLIThirdspan);
+	  insideDXOLLIThirdspan.innerHTML = dxBreadcrumbContentDIVThirdone;
+	  
+	  var insideDXOLLIAnchorThird = document.createElement('a');
+	  insideDXOLLIAnchorThird.setAttribute('href', '#rfs');
+	  insideDXOLLIAnchorThird.classList.add('small', 'scrollto-target');
+	  insideDXOLLIAnchorThird.setAttribute('aria-label', 'Let'+ ' us' + ' talk');
+	  insideDXOLLIThirdDIV.appendChild(insideDXOLLIAnchorThird);
+	  insideDXOLLIAnchorThird.append(dxBreadcrumbContentDIVThirdTwo);	
+	  
+	  var insideDXImgElemSrcTwo = document.querySelectorAll('.nav-wrapper > #nav > div > .dx-breadcrumb > div > div')[5].innerText;
+	  
+	  var insideDXImgElemTwo = document.createElement('img');
+	  insideDXImgElemTwo.setAttribute('src',insideDXImgElemSrcTwo);
+	  insideDXImgElemTwo.setAttribute('alt','');
+	  insideDXImgElemTwo.setAttribute('class','arrow-right-header');
+	  insideDXOLLIAnchorThird.appendChild(insideDXImgElemTwo);
+
+	  var insideDXParaa = document.createElement('p');
+	  insideDXParaa.classList.add('hidden-list', 'strip-head', 'hidden-tab', 'visible-list');
+	  insideDXInsideArticlefourthDIV.appendChild(insideDXParaa);
+
+	  //keep this next two lines at last due to appending entire nav into under header from div wrapper
+	  document.querySelector('.header-wrapper').append(document.querySelector('#nav'));
+	  document.querySelector('.header.block').style.display = 'none';
+
+	  // hamburger appending starts
+	  var insideDXHamburgerDIV = document.createElement('div');
+	  insideDXHamburgerDIV.classList.add('burger-search-wrapper', 'navbar-fixed-top');
+	  document.querySelector('.header-wrapper').append(insideDXHamburgerDIV);
+
+	  var insideDXHamburgerSecondDIV = document.createElement('div');
+	  insideDXHamburgerSecondDIV.classList.add('container');
+	  insideDXHamburgerDIV.appendChild(insideDXHamburgerSecondDIV);
+  
+  	 var insideDXHamburgermainNav = document.createElement('nav');
+ 	 insideDXHamburgermainNav.setAttribute('class','hamburger-menu');
+  	 insideDXHamburgermainNav.setAttribute('role','main' +' nav');
+	 insideDXHamburgermainNav.setAttribute('aria-label','open' +' menu');
+	 insideDXHamburgerSecondDIV.appendChild(insideDXHamburgermainNav);
+
+	  var insideDXHamburgerThirdDIV = document.createElement('div');
+	  insideDXHamburgerThirdDIV.classList.add('menu-bg');
+	  insideDXHamburgerThirdDIV.style.marginTop = '35px';
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerThirdDIV);
+
+	  var insideDXHamburgerFourthDIV = document.createElement('div');
+	  insideDXHamburgerFourthDIV.classList.add('circle');
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerFourthDIV);
+
+	  var insideDXHamburgerFifthAnchor = document.createElement('a');
+	  insideDXHamburgerFifthAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerFifthAnchor.setAttribute('class','burger');
+	  insideDXHamburgerFifthAnchor.setAttribute('aria-label', 'open' +' menu');
+	  insideDXHamburgerFifthAnchor.setAttribute('aria-haspopup', 'false');
+	  insideDXHamburgerFifthAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXHamburgerFifthAnchor.style.marginTop = '35px';
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerFifthAnchor);
+
+	  var insideDXHamburgerSixthDIV = document.createElement('div');
+	  insideDXHamburgerSixthDIV.classList.add('icon-bar1');
+	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgerSixthDIV);
+
+	  var insideDXHamburgerSeventhDIV = document.createElement('div');
+	  insideDXHamburgerSeventhDIV.classList.add('icon-bar2');
+	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgerSeventhDIV);
+
+	  var insideDXHamburgereigthDIV = document.createElement('div');
+	  insideDXHamburgereigthDIV.classList.add('icon-bar3');
+	  insideDXHamburgerFifthAnchor.appendChild(insideDXHamburgereigthDIV);
+
+	  var insideDXHamburgerMenuFirstDIV = document.createElement('div');
+	  insideDXHamburgerMenuFirstDIV.classList.add('menu');
+	  insideDXHamburgerMenuFirstDIV.style.display = 'none';
+	  insideDXHamburgermainNav.appendChild(insideDXHamburgerMenuFirstDIV);
+	  
+	  var insideDXHamburgerMenuSecondDIV = document.createElement('div');
+	  insideDXHamburgerMenuSecondDIV.classList.add('fix-menu', 'hidden-sm', 'hidden-xs', 'col-md-9', 'col-sm-12', 'col-xs-12', 'p0');
+	  insideDXHamburgerMenuFirstDIV.appendChild(insideDXHamburgerMenuSecondDIV); 
+	  insideDXHamburgerMenuSecondDIV.innerHTML = `
+   			<!-- <div class="hidden">
+                        <div class="col-md-12 col-sm-12 col-xs-12 automate h-50vh">
+                            <div class="top_menu_img_wrapper"> <img
+                                    src="/content/dam/infosys-web/en/global-resource/18/banner/being-resilient-lead-menu.jpg"
+                                    class="being-resilient" alt="Being Resilient. That's Live Enterprise."> </div>
+                            <div class="row">
+                                <div class="top_menu_cont_wrapper">
+                                    <div class="col-md-6 col-sm-12 col-xs-12"> <a
+                                            href="/content/infosys-web/en/navigate-your-next/being-resilient.html"
+                                            title="Being Resilient. That's Live Enterprise.">
+                                            <h2 class="head-txt mt100">Being Resilient. That's Live Enterprise.</h2>
+                                        </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 automate bg-img-pos h-50vh"> <a
+                                href="/navigate-your-next/digital-capabilities.html" title="Digital Core Capabilities">
+                                <h2 class="head-txt">Digital Core Capabilities</h2>
+                            </a> </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 innovate bg-img-pos h-50vh"> <a
+                                href="/navigate-your-next/digital-operating-models.html"
+                                title="Digital Operating Models">
+                                <h2 class="head-txt">Digital Operating Models</h2>
+                            </a> </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 learn bg-img-pos h-50vh"> <a
+                                href="/navigate-your-next/talent-transformations.html"
+                                title="Empowering Talent Transformations">
+                                <h2 class="head-txt">Empowering Talent Transformations</h2>
+                            </a> </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 tales-transformation bg-img-pos h-50vh">
+                            <a href="/content/infosys-web/en/navigate-your-next/tales-of-transformation.html"
+                                title="Tales of Transformation">
+                                <h2 class="head-txt">Tales of Transformation</h2>
+                            </a>
+                        </div>
+                    </div> -->
+   			`;
+		// <!-- Side Menu Title -->
+			
+ 	  var insideDXHamburgerMenuThirdDIV = document.createElement('div');
+	  insideDXHamburgerMenuThirdDIV.classList.add('col-md-3', 'col-sm-12', 'col-xs-12', 'menuItems');
+	  insideDXHamburgerMenuFirstDIV.appendChild(insideDXHamburgerMenuThirdDIV); 
+
+	  var insideDXHamburgerMenuFourthAnchor = document.createElement('a');
+	  insideDXHamburgerMenuFourthAnchor.setAttribute('href','/');
+	  insideDXHamburgerMenuFourthAnchor.setAttribute('title','Go' + ' to' +' Infosys' +' Home');
+	  insideDXHamburgerMenuFourthAnchor.setAttribute('aria-label','Go' + ' to' +' Infosys' +' Home');
+	  insideDXHamburgerMenuThirdDIV.appendChild(insideDXHamburgerMenuFourthAnchor);
+
+	  var insideDXHamburgerMenuFifthImgsrc = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[0].innerText;
+
+	  var insideDXHamburgerMenuFifthImg = document.createElement('img');
+	  insideDXHamburgerMenuFifthImg.classList.add('img-responsive', 'logo-inner');
+	  insideDXHamburgerMenuFifthImg.setAttribute('alt','Infosys');
+	  insideDXHamburgerMenuFifthImg.setAttribute('src',insideDXHamburgerMenuFifthImgsrc);
+	  insideDXHamburgerMenuFourthAnchor.appendChild(insideDXHamburgerMenuFifthImg);   
+
+	  var DXHamburgerMenucontentOne = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[1].innerText;
+	  var DXHamburgerMenucontentTwo = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[2].innerText;
+	  var DXHamburgerMenucontentThree = document.querySelectorAll('#nav > div > .dx-hamburger > div > div')[3].innerText;
+
+ 	  var insideDXHamburgerMenuForthUL = document.createElement('ul');
+	  insideDXHamburgerMenuForthUL.classList.add('list-unstyled');
+	  insideDXHamburgerMenuThirdDIV.appendChild(insideDXHamburgerMenuForthUL);
+	  
+ 	  var insideDXHamburgerMenuFifthLI = document.createElement('li');
+	  insideDXHamburgerMenuFifthLI.setAttribute('title',DXHamburgerMenucontentOne);
+	  insideDXHamburgerMenuForthUL.appendChild(insideDXHamburgerMenuFifthLI);
+
+	  var insideDXHamburgerMenuSixthAnchor = document.createElement('a');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('title',DXHamburgerMenucontentOne);
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('class','nyn');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('target','_self');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-label', 'Hover'+' to' +' show' + ' submenu');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-haspopup', 'false');
+	  insideDXHamburgerMenuSixthAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXHamburgerMenuFifthLI.appendChild(insideDXHamburgerMenuSixthAnchor);
+	  insideDXHamburgerMenuSixthAnchor.innerHTML = DXHamburgerMenucontentOne + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
+			//--
+	  var insideDXHamburgerMenuSixthLI = document.createElement('li');
+	  insideDXHamburgerMenuSixthLI.setAttribute('title',DXHamburgerMenucontentTwo);
+	  insideDXHamburgerMenuForthUL.appendChild(insideDXHamburgerMenuSixthLI);
+
+	  var insideDXHamburgerMenuSeventhAnchor = document.createElement('a');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('title',DXHamburgerMenucontentTwo);
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('class','industries');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('target','_self');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('aria-label', 'Hover'+' to' +' show' + ' submenu');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('aria-haspopup', 'false');
+	  insideDXHamburgerMenuSeventhAnchor.setAttribute('aria-expanded', 'false');
+	  insideDXHamburgerMenuSixthLI.appendChild(insideDXHamburgerMenuSeventhAnchor);
+	  insideDXHamburgerMenuSeventhAnchor.innerHTML = DXHamburgerMenucontentTwo + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
+		// ----	
+	  var insideDXHamburgerMenuSeventhLI = document.createElement('li');
+	  insideDXHamburgerMenuSeventhLI.setAttribute('title',DXHamburgerMenucontentThree);
+	  insideDXHamburgerMenuForthUL.appendChild(insideDXHamburgerMenuSeventhLI);
+
+	  var insideDXHamburgerMenueigthAnchor = document.createElement('a');
+	  insideDXHamburgerMenueigthAnchor.setAttribute('href','javascript:void(0);');
+	  insideDXHamburgerMenueigthAnchor.setAttribute('title',DXHamburgerMenucontentThree);
+	  insideDXHamburgerMenueigthAnchor.setAttribute('class','services');
+	  insideDXHamburgerMenueigthAnchor.setAttribute('target','_self');
+	  insideDXHamburgerMenuSeventhLI.appendChild(insideDXHamburgerMenueigthAnchor);
+	  insideDXHamburgerMenueigthAnchor.innerHTML = DXHamburgerMenucontentThree + `<span class="un-line hidden-sm hidden-xs hidden-tab"></span>`;
 
 	  
   }
