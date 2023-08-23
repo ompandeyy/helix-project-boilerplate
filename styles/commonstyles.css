@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url('https://use.typekit.net/nkq8fly.css');
+@font-face {
+  font-family: 'tungstenw05-medium';
+  src: url('/content/dam/infosys-web/en/fonts/tungstenw05-medium.woff2')
+      format('woff2'),
+    url('/content/dam/infosys-web/en/fonts/tungstenw05-medium.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/*--------------------------------------------------------------
+# Hover Shutter animation
+--------------------------------------------------------------*/
+
+.btn-shutter {
+  color: #000;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0.672rem 2.8rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  margin: 1.11rem 0;
+  text-transform: uppercase;
+}
+.btn-shutter:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+  z-index: -1;
+}
+.btn-shutter:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn-shutter:hover:before {
+  width: 100%;
+}
+/*--------------------------------------------------------------
+# Black txt Hover Shutter animation - Desktop
+--------------------------------------------------------------*/
+
+a.btn-shutter-black {
+  color: #000000;
+  border: 1px solid #000000;
+}
+a.btn-shutter-black:before {
+  background-color: #000000;
+}
+a.btn-shutter-black:hover {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #ffffff;
+}
+a.btn-shutter-black:hover:before {
+  width: 100%;
+}
+/* Learn More */
+.btn-shutter-more {
+  color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn-shutter-more:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+  z-index: -1;
+}
+.btn-shutter-more:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn-shutter-more:hover:before {
+  width: 100%;
+}
+.btn-shutter-white:before {
+  background-color: #fff !important;
+}
+.btn-shutter-white:hover {
+  border: 1px solid #fff !important;
+  color: #000 !important;
+}
+/*--------------------------------------------------------------
+# Talk our expert - Desktop
+--------------------------------------------------------------*/
+
+.tlk-our-expert {
+  text-transform: uppercase;
+  letter-spacing: 1px !important;
+  margin-top: 10px;
+  padding: 10px 50px !important;
+}
+.tlk-our-expert:before,
+.tlk-our-expert:hover {
+  background-color: #000 !important;
+}
+/*--------------------------------------------------------------
+# iframe[google_conversion_frame]
+--------------------------------------------------------------*/
+
+iframe[name='google_conversion_frame'] {
+  display: none;
+}
+.iframe-width {
+  width: 100%;
+  height: 750px;
+}
+.iframe-height-rfs-nyn {
+  width: 100%;
+  height: 500px;
+}
+.iframe-height-investors,
+.iframe-height-about {
+  width: 100%;
+  height: 620px;
+}
+.iframe-innovation {
+  width: 100%;
+  height: 1000px;
+}
+.investors-feedback-iframe-height {
+  width: 100%;
+  height: 1200px;
+}
+.website-feedback-iframe-height {
+  width: 100%;
+  height: 820px;
+}
+.market-analyst-iframe-height {
+  width: 100%;
+  height: 1200px;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.mb50 {
+  margin-bottom: 50px !important;
+}
+b,
+strong {
+  font-weight: 600 !important;
+}
+body,
+html {
+  font-family: myriad-pro, Arial;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #007cc3;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: 0;
+}
+#connected_with_us {
+  background-color: #050e53;
+}
+.btn-border {
+  border-radius: 200px;
+}
+.required label {
+  position: relative;
+}
+.required label,
+label {
+  display: inline-block;
+  font-weight: normal !important;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+.required label:before {
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #849f06;
+  border-top: 5px solid transparent;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 50px;
+  top: 8px;
+  width: 0;
+}
+.required label:after {
+  background: #849f06;
+  border-radius: 4px;
+  color: #fff;
+  content: 'Required';
+  font-family: arial;
+  font-size: 10px;
+  left: 1px;
+  line-height: 20px;
+  margin-left: 5px;
+  padding: 1px 6px;
+  position: relative;
+  text-shadow: 1px 1px #637707;
+  top: -2px;
+}
+.redColor {
+  color: #f16c51;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  left: 0px;
+  margin: 0 auto;
+  padding: 4px;
+  position: relative;
+  /*text-shadow: 0 1px 0 #821105;*/
+  top: -1px;
+}
+.form-width {
+  width: 100%;
+}
+.field-bg input:not([value='']):not(:focus) ~ label {
+  top: -20px;
+}
+#connected_with_us {
+  padding: 75px 0;
+  height: 100%;
+  width: 100%;
+  background: url(/content/dam/infosys-web/en/global-resource/background-image/stay-connected.jpg);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  background-color: #050e53 !important;
+}
+#connected_with_us .text-color {
+  color: #ffffff !important;
+}
+.request_for_services .text-color {
+  color: #000000 !important;
+}
+#connected_with_us .white-color {
+  color: #ffffff !important;
+}
+/*--Stay connected--*/
+
+#connected_with_us .connect-us input {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+#connected_with_us .connect-us label {
+  color: #fff !important;
+}
+#connected_with_us .connect-us input::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+#connected_with_us .connect-us input:-moz-placeholder {
+  color: #ffffff !important;
+}
+#connected_with_us .connect-us input::-moz-placeholder {
+  color: #ffffff !important;
+}
+#connected_with_us .connect-us input:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+.select-checkbox input[type='checkbox'] {
+  display: none;
+}
+.select-checkbox input[type='checkbox'] + label {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  width: 160px;
+  padding: 10px 0px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.select-checkbox input[type='checkbox']:checked + label {
+  color: #000;
+  background-color: #fff;
+}
+.select-checkbox input[type='checkbox']:checked + label:after {
+  content: '\2714';
+  font-size: 10px;
+  color: #000;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 12px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  display: inline-table;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.subscribe-btn {
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 42px;
+  border: 1px solid #df9926;
+  background-color: #df9926;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.subscribe-btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.cmp-form-text {
+  position: relative;
+  margin-bottom: 30px;
+  width: 50%;
+  float: inherit;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.cmp-form-text__text {
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7e7e7e;
+}
+.cmp-form-text input:focus,
+.cmp-form-text textarea:focus {
+  outline: none;
+}
+.cmp-form-text label {
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  pointer-events: none;
+  /*left: 5px;*/
+  top: 14px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.cmp-form-text input:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.cmp-form-text textarea:focus ~ label,
+.cmp-form-text textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.bar {
+  /* position: relative; */
+  /* display: block; */
+  width: 100%;
+}
+.bar:before,
+.bar:after {
+  content: '';
+  height: 4px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background-color: #21409a;
+  transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+}
+.cmp-form-text input:focus ~ .bar:before,
+.field-bg input:focus ~ .bar:after {
+  width: 100%;
+}
+.cmp-form-text textarea:focus ~ .bar:before,
+.field-bg textarea:focus ~ .bar:after {
+  width: 100%;
+}
+.submit-btn {
+  color: #fff;
+  padding: 18px 50px;
+  border: 1px solid #df9926; /*button clr changes for requestfrservice*/
+  background-color: #df9926;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.submit-btn:hover {
+  border: 1px solid #7e7e7e;
+  background-color: transparent;
+  color: #3f3f3f;
+}
+.txt-request {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.cmp-form-text sup {
+  color: #f16c51;
+}
+.connect-us textarea {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+.about-section,
+.services-section,
+.contact-section,
+#overview,
+#insights,
+#what_new,
+#success_stories,
+#our_offerings,
+#our_experts,
+#request_for_services,
+#how_wecan_help,
+#infosys_delivers,
+#challenges_solutions,
+#resource_center,
+#infosys_edge,
+#about_us,
+#innovation_fund,
+#thought_leadership,
+#lets_help_you,
+#looking_for,
+#locations,
+#our_products,
+#press_releases,
+#pattern_bg {
+  padding: 75px 0;
+}
+.black-color {
+  color: #000000 !important;
+}
+.h2-heading {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 500;
+  font-family: 'tungstenw05-medium', 'Oswald', sans-serif;
+}
+.yellow-dots-left {
+  display: none;
+}
+.light-gray {
+  color: #7e7e7e !important;
+}
+.txt-request {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.block {
+  display: block;
+}
+.field-bg {
+  position: relative;
+  margin-bottom: 30px; /*    max-width: 100%; */
+}
+.field-bg input,
+textarea {
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7e7e7e; /*clr changes fr requestfrservice*/
+}
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before,
+.bar:after {
+  content: '';
+  height: 4px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #21409a;
+  transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+}
+.field-bg label {
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  pointer-events: none;
+  /* left: 5px; */
+  top: 14px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.field-bg input:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.field-bg textarea:focus ~ label,
+.field-bg textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.field-bg sup {
+  color: #a5281a;
+}
+.submit-btn {
+  color: #fff;
+  padding: 18px 50px;
+  border: 1px solid #df9926;
+  background-color: #df9926;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative; /*left: 15px;*/
+}
+.field-bg form {
+  width: 100%;
+}
+.field-bg input:focus ~ .bar:before,
+.field-bg input:focus ~ .bar:after {
+  width: 100%;
+}
+.field-bg textarea:focus ~ .bar:before,
+.field-bg textarea:focus ~ .bar:after {
+  width: 100%;
+}
+.field-bg input:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.field-bg textarea:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+/*styles coming from rfs-form.css:-*/
+
+.required label,
+label {
+  display: inline-block;
+  font-weight: normal !important;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+/*Lates from another rf-form mockups:-*/
+
+.form-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 5px;
+  -webkit-tap-highlight-color: transparent;
+  float: left;
+  padding-bottom: 18px;
+  margin-right: 10px;
+}
+.form-switch i {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 23px;
+  display: inline-block;
+  margin-right: 0.2rem;
+  position: relative;
+  transition: all 0.3s linear 0s;
+  vertical-align: text-bottom;
+  height: 22px !important;
+  width: 40px !important;
+}
+.form-switch i:before {
+  background-color: rgba(0, 0, 0, 0.17);
+  border-radius: 11px;
+  content: '';
+  left: 0;
+  position: absolute;
+  transform: translate3d(2px, 2px, 0px) scale3d(1, 1, 1);
+  transition: all 0.25s linear 0s;
+  height: 18px !important;
+  width: 36px !important;
+}
+.form-switch i:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+  width: 18px !important;
+  height: 18px !important;
+}
+.form-switch:active i:after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+.form-switch:active input:checked + i::after {
+  transform: translate3d(16px, 2px, 0);
+}
+.form-switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-switch input:checked + i {
+  background-color: #4bd763;
+}
+.form-switch input:checked + i:before {
+  transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+.form-switch input:checked + i::after {
+  transform: translate3d(22px, 2px, 0);
+}
+#lineheight {
+  vertical-align: 4px;
+}
+#connected_with_us #lineheight {
+  color: #ffffff !important;
+}
+.pvcy-stmt {
+  color: #000;
+  margin-left: 2px;
+  text-decoration: underline;
+}
+.pvcy-stmt:hover {
+  color: #000000;
+}
+.form-width {
+  width: 100%;
+}
+.form-table {
+  /*display:inline-block; */
+  float: left;
+  width: 50%;
+}
+/* input fields */
+.field-bg input:not([value='']):not(:focus) ~ label {
+  top: -20px;
+}
+.field-bg input:focus::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  opacity: 1;
+  font-size: 14px !important;
+  color: #777;
+}
+.field-bg input:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 1;
+  font-size: 14px !important;
+  color: #777;
+}
+.field-bg input:focus:-ms-input-placeholder {
+  /* IE 10+ */
+  opacity: 1;
+  font-size: 14px !important;
+  color: #777;
+}
+.field-bg input:focus:-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 1;
+  font-size: 14px !important;
+  color: #777;
+}
+.field-bg input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  opacity: 0;
+}
+.field-bg input::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0;
+}
+.field-bg input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: transparent;
+}
+.field-bg input:-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 0;
+}
+.field-bg input:focus,
+.field-bg textarea:focus {
+  outline: none;
+}
+/* share part */
+.share-page {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  /* justify-content: center; */
+}
+.share-page-top::before {
+  top: unset !important;
+  bottom: -25px;
+}
+/* .share-page::before {
+	content: '';
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+  } */
+.social-txt span {
+  display: block;
+  font-weight: 600;
+}
+.social-icons a {
+  width: auto;
+  height: auto;
+  margin-left: 15px;
+  /* background-color: #fff; */
+  color: #000;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+}
+.social-icons:nth-child(2) a {
+  margin-left: 30px;
+}
+.social-icons a,
+.social-icons a:hover,
+.social-icons a:focus {
+  color: #000;
+}
+.share-page .social-icons img {
+  width: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .h2-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  #connected_with_us {
+    background: url(/content/dam/infosys-web/en/global-resource/background-image/stay-connected.jpg);
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .cmp-form-text {
+    width: 100%;
+  }
+  .submit-btn {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .txt-request {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .field-bg {
+    margin-right: 0px;
+  }
+  .mb-xs-50 {
+    margin-bottom: 50px;
+  }
+  .h2-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #connected_with_us {
+    background: url(/content/dam/infosys-web/en/global-resource/background-image/stay-connected.jpg);
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .cmp-form-text {
+    width: 100%;
+  }
+}
