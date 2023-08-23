@@ -4,6 +4,10 @@ import { sampleRUM } from './scripts.js';
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
 
+
+import('./burger-menu.js')
+import('./clientlib-base.js')
+
 // add more delayed functionality here
 function loadOwlSlider() {
 	"use strict";

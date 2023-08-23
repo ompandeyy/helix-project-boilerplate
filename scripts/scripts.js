@@ -702,13 +702,17 @@ async function loadLazy(doc) {
 function loadDelayed() {
   let app = {}
   // eslint-disable-next-line import/no-cycle
+ 
+  
 
   app.thirdPartyScript=()=>{
-    loadScript("jquery-script",envUrl()+"/scripts/jquery/jquery-3.7.0.js").then(()=>{
-        loadScript("owl-carousel-script",envUrl()+"/scripts/owl-carousel-js/owl.carousel.min.js").then(()=>{
-            window.setTimeout(() => {
-              import('./delayed.js')
-            }, 500);
+    loadScript("jquery-script",envUrl()+"/scripts/jquery/jquery.js").then(()=>{
+        loadScript("jquery-ui",envUrl()+"/scripts/jquery/jquery-ui.js").then(()=>{
+          loadScript("owl-carousel",envUrl()+"/scripts/owl-carousel-js/owl.carousel.min.js").then(()=>{
+                window.setTimeout(() => {
+                  import('./delayed.js')
+                }, 500);
+          }).catch(()=>{})
         }).catch(()=>{})
     }).catch(()=>{})
   }
