@@ -164,53 +164,53 @@ const getBreadcrumb = (divData,nav) => {
 																	<!-- divider class removed due to issue in aboutus page-->
 																	<li>
 																		<a title="Enterprise Agile DevOps"
-																			href="/services/agile-devops.html">Enterprise Agile
+																			href="javascript:void(0);">Enterprise Agile
 																			DevOps
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Applied AI"
-																			href="/services/applied-ai.html">Applied AI
+																			href="javascript:void(0);">Applied AI
 																		</a>
 																	</li>
 																	<li>
 																		<a title="API Economy &amp; Microservices"
-																			href="/services/api-economy.html">API Economy
+																			href="javascript:void(0);">API Economy
 																			&amp; Microservices
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Application Development and Maintenance "
-																			href="/services/application-development-maintenance.html">Application
+																			href="javascript:void(0);">Application
 																			Development and
 																			Maintenance
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Application Modernization"
-																			href="/services/application-modernization.html">Application
+																			href="javascript:void(0);">Application
 																			Modernization
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Blockchain"
-																			href="/services/blockchain.html">Blockchain
+																			href="javascript:void(0);">Blockchain
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Cloud - Infosys Cobalt"
-																			href="/services/cloud-cobalt.html">Cloud - Infosys
+																			href="javascript:void(0);">Cloud - Infosys
 																			Cobalt
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Consulting Services"
-																			href="/services/consulting.html">Consulting Services
+																			href="javascript:void(0);">Consulting Services
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Cyber Security"
-																			href="/services/cyber-security.html">Cyber Security
+																			href="javascript:void(0);">Cyber Security
 																		</a>
 																	</li>
 																</ul>
@@ -224,45 +224,45 @@ const getBreadcrumb = (divData,nav) => {
 																	<!-- divider class removed due to issue in aboutus page-->
 																	<li>
 																		<a title="Data Analytics and AI"
-																			href="/services/data-analytics.html">Data Analytics and
+																			href="javascript:void(0);">Data Analytics and
 																			AI
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Digital Commerce"
-																			href="/services/digital-commerce.html">Digital Commerce
+																			href="javascript:void(0);">Digital Commerce
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Digital Interactions"
-																			href="/services/digital-interaction.html">Digital
+																			href="javascript:void(0);">Digital
 																			Interactions
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Digital Marketing"
-																			href="/services/digital-marketing.html">Digital
+																			href="javascript:void(0);">Digital
 																			Marketing
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Digital Experience"
-																			href="/services/digital-experience.html">Digital
+																			href="https://main--helix-project-boilerplate--ompandeyy.hlx.live">Digital
 																			Experience
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Digital Process Automation"
-																			href="/services/digital-process-automation.html">Digital
+																			href="javascript:void(0);l">Digital
 																			Process Automation
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Digital Supply Chain"
-																			href="/services/digital-supply-chain.html">Digital
+																			href="javascript:void(0);">Digital
 																			Supply
 																			Chain
 																		</a>
@@ -270,28 +270,28 @@ const getBreadcrumb = (divData,nav) => {
 
 																	<li>
 																		<a title="Digital Workplace Services"
-																			href="/services/digital-workplace-services.html">Digital
+																			href="javascript:void(0);">Digital
 																			Workplace Services
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Infosys Metaverse Foundry"
-																			href="/services/metaverse.html">Infosys Metaverse
+																			href="javascript:void(0);">Infosys Metaverse
 																			Foundry
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Infosys Generative AI Labs"
-																			href="/services/generative-ai.html">Infosys
+																			href="javascript:void(0);">Infosys
 																			Generative AI Labs
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Infosys Topaz"
-																			href="/services/data-ai-topaz.html">Infosys Topaz
+																			href="javascript:void(0);l">Infosys Topaz
 																		</a>
 																	</li>
 
@@ -306,69 +306,69 @@ const getBreadcrumb = (divData,nav) => {
 																	<!-- divider class removed due to issue in aboutus page-->
 																	<li>
 																		<a title="Energy Transition"
-																			href="/services/energy-transition.html">Energy
+																			href="javascript:void(0);">Energy
 																			Transition
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Engineering Services"
-																			href="/services/engineering-services.html">Engineering
+																			href="javascript:void(0);">Engineering
 																			Services
 																		</a>
 																	</li>
 																	<li>
 																		<a title="Incubating Emerging Offerings"
-																			href="/services/incubating-emerging-technologies.html">Incubating
+																			href="javascript:void(0);">Incubating
 																			Emerging Offerings
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Testing"
-																			href="/services/validation-solutions.html">Testing
+																			href="javascript:void(0);">Testing
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Microsoft Business Application Services"
-																			href="/services/microsoft-dynamics.html">Microsoft
+																			href="javascript:void(0);">Microsoft
 																			Business Application Services
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Microsoft Cloud Business"
-																			href="/services/microsoft-cloud-business.html">Microsoft
+																			href="javascript:void(0);">Microsoft
 																			Cloud Business
 																		</a>
 																	</li>
 
 																	<li>
-																		<a title="Oracle" href="/services/oracle.html">Oracle
+																		<a title="Oracle" href="javascript:void(0);">Oracle
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Salesforce"
-																			href="/services/salesforce.html">Salesforce
+																			href="javascript:void(0);">Salesforce
 																		</a>
 																	</li>
 
 																	<li>
-																		<a title="SAP" href="/services/sap.html">SAP
+																		<a title="SAP" href="javascript:void(0);">SAP
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Service Experience Transformation"
-																			href="/services/experience-transformation.html">Service
+																			href="javascript:void(0);">Service
 																			Experience Transformation
 																		</a>
 																	</li>
 
 																	<li>
 																		<a title="Workplace Transformation"
-																			href="/services/microsoft-cloud-business/offerings/digital-workplace-services.html">Workplace
+																			href="javascript:void(0);">Workplace
 																			Transformation
 																		</a>
 																	</li>
@@ -390,7 +390,7 @@ const getBreadcrumb = (divData,nav) => {
 																<ul>
 																	<li>
 																		<a title="Digital Experience Home"
-																			href="/services/digital-experience.html">Digital
+																			href="https://main--helix-project-boilerplate--ompandeyy.hlx.live">Digital
 																			Experience Home</a>
 																	</li>
 																	<li>
@@ -400,16 +400,16 @@ const getBreadcrumb = (divData,nav) => {
 
 																	<li>
 																		<a title="Success Stories"
-																			href="/services/digital-experience/case-studies.html">Success
+																			href="javascript:void(0);">Success
 																			Stories</a>
 																	</li>
 																	<li>
 																		<a title="Insights"
-																			href="/services/digital-experience/insights.html">Insights</a>
+																			href="javascript:void(0);">Insights</a>
 																	</li>
 																	<li>
 																		<a title="Offerings"
-																			href="/services/digital-experience.html#our_offerings_title">Offerings</a>
+																			href="javascript:void(0);">Offerings</a>
 																	</li>
 																</ul>
 															</li>
@@ -417,24 +417,24 @@ const getBreadcrumb = (divData,nav) => {
 																<ul>
 																	<li class="dropdown-header">
 																		<a title="Services"
-																			href="/services/digital-experience.html">
+																			href="https://main--helix-project-boilerplate--ompandeyy.hlx.live">
 																			Services
 																		</a>
 																	</li>
 																	<li class="divider"></li>
 																	<li>
 																		<a title="Digital Marketing"
-																			href="/services/digital-experience/offerings/digital-marketing.html">Digital
+																			href="javascript:void(0);">Digital
 																			Marketing</a>
 																	</li>
 																	<li>
-																		<a title="Digital Commerce"
-																			href="/services/digital-experience/offerings/digital-commerce.html">Digital
+																		<a title="Digital Commerce"	
+																			href="javascript:void(0);">Digital
 																			Commerce</a>
 																	</li>
 																	<li>
 																		<a title="Digital Interactions"
-																			href="/services/digital-experience/offerings/digital-interactions.html">Digital
+																			href="javascript:void(0);">Digital
 																			Interactions</a>
 																	</li>
 																</ul>
@@ -579,7 +579,7 @@ const getHamburger = (divData,nav) => {
 								</div> -->
 							</div>
 							<!-- Side Menu Title -->
-							<div class="col-md-3 col-sm-12 col-xs-12 menuItems"> <a href="/" title="Go to Infosys Home"
+							<div class="col-md-3 col-sm-12 col-xs-12 menuItems"> <a href="https://www.infosys.com/" title="Go to Infosys Home"
 								aria-label="Go to Infosys Home"> <img src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/logo.svg"
 									alt="Infosys" class="img-responsive logo-inner"> </a>
 								<ul class="list-unstyled">
@@ -610,19 +610,19 @@ const getHamburger = (divData,nav) => {
 									target="_self" aria-label="Hover to show submenu" aria-haspopup="false"
 									aria-expanded="false">About Us <span class="un-line hidden-sm hidden-xs hidden-tab"></span> </a>
 								</li>
-								<li class="smalltext" title="Investors"> <a href="/investors.html" title="Investors"
+								<li class="smalltext" title="Investors"> <a href="https://www.infosys.com/investors.html" title="Investors"
 									class="hover-menu-hide" target="_self" aria-label="Go to Investor Page" aria-haspopup="false"
 									aria-expanded="false">Investors <span class="un-line hidden-sm hidden-xs hidden-tab"></span>
 									</a> </li>
-								<li class="smalltext" title="Careers"> <a href="/careers/" title="Careers" class="hover-menu-hide"
+								<li class="smalltext" title="Careers"> <a href="https://www.infosys.com/careers/" title="Careers" class="hover-menu-hide"
 									target="_self" aria-label="Go to Careers Page" aria-haspopup="false"
 									aria-expanded="false">Careers <span class="un-line hidden-sm hidden-xs hidden-tab"></span> </a>
 								</li>
-								<li class="smalltext" title="Newsroom"> <a href="/newsroom.html" title="Newsroom"
+								<li class="smalltext" title="Newsroom"> <a href="https://www.infosys.com/newsroom.html" title="Newsroom"
 									class="hover-menu-hide" target="_self" aria-label="Go to Newsroom Page" aria-haspopup="false"
 									aria-expanded="false">Newsroom <span class="un-line hidden-sm hidden-xs hidden-tab"></span> </a>
 								</li>
-								<li class="smalltext" title="Contact Us"> <a href="/contact.html" title="Contact Us"
+								<li class="smalltext" title="Contact Us"> <a href="https://www.infosys.com/contact.html" title="Contact Us"
 									class="hover-menu-hide" target="_self" aria-label="Go to Contact Page" aria-haspopup="false"
 									aria-expanded="false">Contact Us <span class="un-line hidden-sm hidden-xs hidden-tab"></span>
 									</a> </li>
@@ -693,12 +693,12 @@ const getHamburger = (divData,nav) => {
 									<div class="col-md-3 col-sm-4 col-xs-12 innovate bg-img-pos h-50vh">
 									<h2 class="head-txt">Digital Operating Models</h2>
 									</div>
-								</a> <a href="/navigate-your-next/talent-transformations.html"
+								</a> <a href="https://www.infosys.com/navigate-your-next/talent-transformations.html"
 									title="Empowering Talent Transformations">
 									<div class="col-md-3 col-sm-4 col-xs-12 learn bg-img-pos h-50vh">
 									<h2 class="head-txt">Empowering Talent Transformations</h2>
 									</div>
-								</a> <a href="/navigate-your-next/tales-of-transformation.html" title="Tales of Transformation">
+								</a> <a href="https://www.infosys.com/navigate-your-next/tales-of-transformation.html" title="Tales of Transformation">
 									<div class="col-md-3 col-sm-4 col-xs-12 tales-transformation bg-img-pos h-50vh">
 									<h2 class="head-txt black-color1">Tales of Transformation</h2>
 									</div>
@@ -710,7 +710,7 @@ const getHamburger = (divData,nav) => {
 								style="visibility: visible; animation-duration: 0.3s; display: none;">
 								<div class="cross visible1024-cross"> <a title="close" href="javascript:void(0);" alt="Cross"
 									aria-label="Close menu" aria-haspopup="false" aria-expanded="false"> <img
-									src="/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
+									src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
 								<div class="submenu-portion">
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="h2-heading mb10">Industries</h2>
@@ -718,82 +718,82 @@ const getHamburger = (divData,nav) => {
 								<div class="col-md-4 col-sm-6 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
 									<li> <a aria-label="Go to Aerospace &amp; Defense Page"
-										href="/industries/aerospace-defense.html" title="Aerospace &amp; Defense">Aerospace &amp;
+										href="https://www.infosys.com/industries/aerospace-defense.html" title="Aerospace &amp; Defense">Aerospace &amp;
 										Defense</a> </li>
 									<li> <a aria-label="Go to Agriculture Page" title="Agriculture"
-										href="/industries/agriculture.html">Agriculture</a> </li>
+										href="https://www.infosys.com/industries/agriculture.html">Agriculture</a> </li>
 									<li> <a aria-label="Go to Automotive Page" title="Automotive"
-										href="/industries/automotive.html">Automotive</a> </li>
+										href="https://www.infosys.com/industries/automotive.html">Automotive</a> </li>
 									<li> <a aria-label="Go to Chemical Manufacturing Page" title="Chemical Manufacturing"
-										href="/industries/chemical-manufacturing.html">Chemical
+										href="https://www.infosys.com/industries/chemical-manufacturing.html">Chemical
 										Manufacturing</a> </li>
 									<li> <a aria-label="Go to Communication Services Page" title="Communication Services"
-										href="/industries/communication-services.html">Communication
+										href="https://www.infosys.com/industries/communication-services.html">Communication
 										Services</a> </li>
 									<li> <a aria-label="Go to Consumer Packaged Goods Page" title="Consumer Packaged Goods"
-										href="/industries/consumer-packaged-goods.html">Consumer
+										href="https://www.infosys.com/industries/consumer-packaged-goods.html">Consumer
 										Packaged Goods</a> </li>
 									<li> <a aria-label="Go to Education Page" title="Education"
-										href="/industries/education.html">Education</a> </li>
+										href="https://www.infosys.com/industries/education.html">Education</a> </li>
 									<li> <a aria-label="Go to Engineering Procurement &amp; Construction"
 										title="Engineering Procurement &amp; Construction"
-										href="/industries/engineering-procurement-construction.html">Engineering
+										href="https://www.infosys.com/industries/engineering-procurement-construction.html">Engineering
 										Procurement &amp; Construction</a> </li>
 									<li> <a aria-label="Go to Financial Services Page" title="Financial Services"
-										href="/industries/financial-services.html">Financial
+										href="https://www.infosys.com/industries/financial-services.html">Financial
 										Services</a> </li>
 									</ul>
 								</div>
 								<div class="col-md-4 col-sm-6 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
 									<li> <a aria-label="Go to Healthcare Page" title="Healthcare"
-										href="/industries/healthcare.html">Healthcare</a> </li>
+										href="https://www.infosys.com/industries/healthcare.html">Healthcare</a> </li>
 									<li> <a aria-label="Go to High Technology Page" title="High Technology"
-										href="/industries/high-technology.html">High
+										href="https://www.infosys.com/industries/high-technology.html">High
 										Technology</a> </li>
 									<li> <a aria-label="Go to Industrial Manufacturing Page" title="Industrial Manufacturing"
-										href="/industries/industrial-manufacturing.html">Industrial
+										href="https://www.infosys.com/industries/industrial-manufacturing.html">Industrial
 										Manufacturing</a> </li>
 									<li> <a aria-label="Go to Information Services &amp; Publishing Page"
-										title="Information Services &amp; Publishing" href="/industries/publishing.html">Information
+										title="Information Services &amp; Publishing" href="https://www.infosys.com/industries/publishing.html">Information
 										Services
 										&amp; Publishing</a> </li>
 									<li> <a aria-label="Go to Insurance Page" title="Insurance"
-										href="/industries/insurance.html">Insurance</a> </li>
+										href="https://www.infosys.com/industries/insurance.html">Insurance</a> </li>
 									<li> <a aria-label="Go to Life Sciences Page" title="Life Sciences"
-										href="/industries/life-sciences.html">Life Sciences</a> </li>
+										href="https://www.infosys.com/industries/life-sciences.html">Life Sciences</a> </li>
 									<li> <a aria-label="Go to Logistics &amp; Distribution Page"
 										title="Logistics &amp; Distribution"
-										href="/industries/logistics-distribution.html">Logistics
+										href="https://www.infosys.com/industries/logistics-distribution.html">Logistics
 										&amp; Distribution</a> </li>
 									<li> <a aria-label="Go to Media and Entertainment Page" title="Media and Entertainment"
-										href="/industries/media-entertainment.html">Media and
+										href="https://www.infosys.com/industries/media-entertainment.html">Media and
 										Entertainment</a> </li>
 									</ul>
 								</div>
 								<div class="col-md-4 col-sm-12 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
-									<li> <a aria-label="Go to Mining Page" title="Mining" href="/industries/mining.html">Mining</a>
+									<li> <a aria-label="Go to Mining Page" title="Mining" href="https://www.infosys.com/industries/mining.html">Mining</a>
 									</li>
 									<li> <a aria-label="Go to Oil and Gas Page" title="Oil and Gas"
-										href="/industries/oil-and-gas.html">Oil and Gas</a> </li>
+										href="https://www.infosys.com/industries/oil-and-gas.html">Oil and Gas</a> </li>
 									<li> <a aria-label="Go to Private Equity Page" title="Private Equity"
-										href="/industries/private-equity.html">Private Equity</a> </li>
+										href="https://www.infosys.com/industries/private-equity.html">Private Equity</a> </li>
 									<li> <a aria-label="Go to Professional Services Page" title="Professional Services"
-										href="/industries/professional-services.html">Professional
+										href="https://www.infosys.com/industries/professional-services.html">Professional
 										Services</a> </li>
 									<li> <a aria-label="Go to Public Sector Page" title="Public Sector"
-										href="/industries/public-sector.html">Public
+										href="https://www.infosys.com/industries/public-sector.html">Public
 										Sector</a> </li>
-									<li> <a aria-label="Go to Retail Page" title="Retail" href="/industries/retail.html">Retail</a>
+									<li> <a aria-label="Go to Retail Page" title="Retail" href="https://www.infosys.com/industries/retail.html">Retail</a>
 									</li>
 									<li> <a aria-label="Go to Travel and Hospitality Page" title="Travel and Hospitality"
-										href="/industries/travel-hospitality.html">Travel and
+										href="https://www.infosys.com/industries/travel-hospitality.html">Travel and
 										Hospitality</a> </li>
 									<li> <a aria-label="Go to Utilities Page" title="Utilities"
-										href="/industries/utilities.html">Utilities</a> </li>
+										href="https://www.infosys.com/industries/utilities.html">Utilities</a> </li>
 									<li> <a aria-label="Go to Waste Management Page" title="Waste Management"
-										href="/industries/waste-management.html">Waste
+										href="https://www.infosys.com/industries/waste-management.html">Waste
 										Management</a> </li>
 									</ul>
 								</div>
@@ -804,7 +804,7 @@ const getHamburger = (divData,nav) => {
 								style="visibility: visible; animation-duration: 0.3s; display: none;">
 								<div class="cross visible1024-cross"> <a title="close" href="javascript:void(0);" alt="Cross"
 									aria-label="Close menu" aria-haspopup="false" aria-expanded="false"> <img
-									src="/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
+									src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
 								<div class="submenu-portion">
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="h2-heading mb10">Services</h2>
@@ -812,7 +812,7 @@ const getHamburger = (divData,nav) => {
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-12"> <img
-										src="/content/dam/infosys-web/burger-menu/en/images/experience.svg" alt="Experience"
+										src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/experience.svg" alt="Experience"
 										class="">
 										<h3 class="hear-txt-sub">Experience</h3>
 									</div>
@@ -821,20 +821,20 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Digital Marketing Page"
-												href="/services/digital-marketing.html" title="Digital Marketing">Digital
+												href="https://www.infosys.com/services/digital-marketing.html" title="Digital Marketing">Digital
 												Marketing</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
-											<li> <a aria-label="Go to Digital Commerce Page" href="/services/digital-commerce.html"
+											<li> <a aria-label="Go to Digital Commerce Page" href="https://www.infosys.com/services/digital-commerce.html"
 												title="Digital Commerce">Digital Commerce</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Digital Interactions Page"
-												href="/services/digital-interaction.html" title="Digital Interactions">Digital
+												href="https://www.infosys.com/services/digital-interaction.html" title="Digital Interactions">Digital
 												Interactions</a> </li>
 											</ul>
 										</div>
@@ -842,7 +842,7 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
 											<li> <a aria-label="Go to Digital Workplace Services Page"
-												href="/services/digital-workplace-services.html"
+												href="https://www.infosys.com/services/digital-workplace-services.html"
 												title="Digital Workplace Services">Digital Workplace
 												Services</a> </li>
 											</ul>
@@ -850,14 +850,14 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
 											<li> <a aria-label="Go to Digital Experience Page"
-												href="/services/digital-experience.html" title="Digital Experience">Digital
+												href="https://www.infosys.com/services/digital-experience.html" title="Digital Experience">Digital
 												Experience</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
 											<li> <a aria-label="Go to Infosys Metaverse Foundry Page"
-												href="/services/metaverse.html" title="Infosys Metaverse Foundry">Infosys Metaverse
+												href="https://www.infosys.com/services/metaverse.html" title="Infosys Metaverse Foundry">Infosys Metaverse
 												Foundry</a> </li>
 											</ul>
 										</div>
@@ -869,27 +869,27 @@ const getHamburger = (divData,nav) => {
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-12"> <img
-										src="/content/dam/infosys-web/burger-menu/en/images/insight.svg" alt="Insight" class="">
+										src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/insight.svg" alt="Insight" class="">
 										<h3 class="hear-txt-sub">Insight</h3>
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-12 align-list">
 										<div class="row">
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0 mb0">
-											<li> <a aria-label="Go to Infosys Topaz Page" href="/services/data-ai-topaz.html"
+											<li> <a aria-label="Go to Infosys Topaz Page" href="https://www.infosys.com/services/data-ai-topaz.html"
 												title="Infosys Topaz">Infosys Topaz</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Data Analytics and AI Page"
-												href="/services/data-analytics.html" title="Data Analytics and AI">Data Analytics
+												href="https://www.infosys.com/services/data-analytics.html" title="Data Analytics and AI">Data Analytics
 												and AI</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
-											<li> <a aria-label="Go to Applied AI Page" href="/services/applied-ai.html"
+											<li> <a aria-label="Go to Applied AI Page" href="https://www.infosys.com/services/applied-ai.html"
 												title="Applied AI">Applied AI</a> </li>
 											</ul>
 										</div>
@@ -897,7 +897,7 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
 											<li> <a aria-label="Go to Infosys Generative AI Page"
-												href="/services/generative-ai.html" title="Infosys Generative AI">Infosys Generative
+												href="https://www.infosys.com/services/generative-ai.html" title="Infosys Generative AI">Infosys Generative
 												AI</a> </li>
 											</ul>
 										</div>
@@ -909,28 +909,28 @@ const getHamburger = (divData,nav) => {
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-12"> <img
-										src="/content/dam/infosys-web/burger-menu/en/images/innovate.svg" alt="Innovate" class="">
+										src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/innovate.svg" alt="Innovate" class="">
 										<h3 class="hear-txt-sub">Innovate</h3>
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-12">
 										<div class="row">
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
-											<li> <a aria-label="Go to Blockchain Page" href="/services/blockchain.html"
+											<li> <a aria-label="Go to Blockchain Page" href="https://www.infosys.com/services/blockchain.html"
 												title="Blockchain">Blockchain</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
 											<li> <a aria-label="Go to Engineering Services Page"
-												href="/services/engineering-services.html" title="Engineering Services">Engineering
+												href="https://www.infosys.com/services/engineering-services.html" title="Engineering Services">Engineering
 												Services</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline">
 											<li> <a aria-label="Go to Internet of Things (IoT) Page"
-												href="/services/engineering-services/service-offerings/internet-of-things.html"
+												href="https://www.infosys.com/services/engineering-services/service-offerings/internet-of-things.html"
 												title="Internet of Things (IoT)">Internet of Things (IoT)</a> </li>
 											</ul>
 										</div>
@@ -942,7 +942,7 @@ const getHamburger = (divData,nav) => {
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-12"> <img
-										src="/content/dam/infosys-web/burger-menu/en/images/accelerate.svg" alt="Accelerate"
+										src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/accelerate.svg" alt="Accelerate"
 										class="">
 										<h3 class="hear-txt-sub">Accelerate</h3>
 									</div>
@@ -950,14 +950,14 @@ const getHamburger = (divData,nav) => {
 										<div class="row">
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
-											<li> <a aria-label="Go to Agile DevOps Page" href="/services/agile-devops.html"
+											<li> <a aria-label="Go to Agile DevOps Page" href="https://www.infosys.com/services/agile-devops.html"
 												title="Enterprise Agile DevOps">Enterprise Agile DevOps </a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to API Economy &amp; Microservices Page"
-												href="/services/api-economy.html" title="API Economy &amp; Microservices">API
+												href="https://www.infosys.com/services/api-economy.html" title="API Economy &amp; Microservices">API
 												Economy &amp;
 												Microservices</a> </li>
 											</ul>
@@ -965,7 +965,7 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Application Modernization Page"
-												href="/services/application-modernization.html"
+												href="https://www.infosys.com/services/application-modernization.html"
 												title="Application Modernization">Application Modernization</a> </li>
 											</ul>
 										</div>
@@ -973,14 +973,14 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Cloud - Infosys Cobalt Page"
-												href="/services/cloud-cobalt.html" title="Cloud - Infosys Cobalt">Cloud - Infosys
+												href="https://www.infosys.com/services/cloud-cobalt.html" title="Cloud - Infosys Cobalt">Cloud - Infosys
 												Cobalt</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Digital Process Automation Page"
-												href="/services/digital-process-automation.html"
+												href="https://www.infosys.com/services/digital-process-automation.html"
 												title="Digital Process Automation">Digital Process
 												Automation</a> </li>
 											</ul>
@@ -988,7 +988,7 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Digital Supply Chain Page"
-												href="/services/digital-supply-chain.html" title="Digital Supply Chain">Digital
+												href="https://www.infosys.com/services/digital-supply-chain.html" title="Digital Supply Chain">Digital
 												Supply Chain</a> </li>
 											</ul>
 										</div>
@@ -996,7 +996,7 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Microsoft Cloud Business Page"
-												href="/services/microsoft-dynamics.html"
+												href="https://www.infosys.com/services/microsoft-dynamics.html"
 												title="Microsoft Business Application Services">Microsoft
 												Business Application Services</a> </li>
 			
@@ -1005,14 +1005,14 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Microsoft Cloud Business Page"
-												href="/services/microsoft-cloud-business.html"
+												href="https://www.infosys.com/services/microsoft-cloud-business.html"
 												title="Microsoft Cloud Business">Microsoft Cloud Business</a> </li>
 			
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
-											<li> <a aria-label="Go to Oracle Page" href="/services/oracle.html"
+											<li> <a aria-label="Go to Oracle Page" href="https://www.infosys.com/services/oracle.html"
 												title="Oracle">Oracle</a> </li>
 											</ul>
 										</div>
@@ -1020,20 +1020,20 @@ const getHamburger = (divData,nav) => {
 										<div class="clearfix visible-sm hidden-xs"></div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
-											<li> <a aria-label="Go to SAP Page" href="/services/sap.html" title="SAP">SAP</a> </li>
+											<li> <a aria-label="Go to SAP Page" href="https://www.infosys.com/services/sap.html" title="SAP">SAP</a> </li>
 											</ul>
 										</div>
 			
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
-											<li> <a aria-label="Go to Salesforce Page" href="/services/salesforce.html"
+											<li> <a aria-label="Go to Salesforce Page" href="https://www.infosys.com/services/salesforce.html"
 												title="Salesforce">Salesforce</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Service Experience Transformation Page"
-												href="/services/experience-transformation.html"
+												href="https://www.infosys.com/services/experience-transformation.html"
 												title="Service Experience Transformation">Service Experience
 												Transformation</a> </li>
 											</ul>
@@ -1042,7 +1042,7 @@ const getHamburger = (divData,nav) => {
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb0">
 											<li> <a aria-label="Go to Energy Transition Page"
-												href="/services/energy-transition.html" title="Energy Transition">Energy
+												href="https://www.infosys.com/services/energy-transition.html" title="Energy Transition">Energy
 												Transition</a> </li>
 											</ul>
 										</div>
@@ -1054,21 +1054,21 @@ const getHamburger = (divData,nav) => {
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-12"> <img
-										src="/content/dam/infosys-web/burger-menu/en/images/assure.svg" alt="Assure" class="">
+										src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/assure.svg" alt="Assure" class="">
 										<h3 class="hear-txt-sub">Assure</h3>
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-12">
 										<div class="row">
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline mb-xs-0">
-											<li> <a aria-label="Go to Cyber Security Page" href="/services/cyber-security.html"
+											<li> <a aria-label="Go to Cyber Security Page" href="https://www.infosys.com/services/cyber-security.html"
 												title="Cyber Security">Cyber
 												Security</a> </li>
 											</ul>
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 											<ul class="list-inline">
-											<li> <a aria-label="Go to Testing Page" href="/services/validation-solutions.html"
+											<li> <a aria-label="Go to Testing Page" href="https://www.infosys.com/services/validation-solutions.html"
 												title="Testing">Testing</a> </li>
 											</ul>
 										</div>
@@ -1081,9 +1081,9 @@ const getHamburger = (divData,nav) => {
 									<div class="row">
 									<div class="col-md-3 col-sm-12 col-xs-12"> <a
 										aria-label="Go to Application Development and Maintenance Page"
-										href="/services/application-development-maintenance.html"
+										href="https://www.infosys.com/services/application-development-maintenance.html"
 										title="Application Development and Maintenance"> <img
-											src="/content/dam/infosys-web/en/global-resource/background-image/application.svg" alt=""
+											src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/application.svg" alt=""
 											class="">
 										<h3 class="hear-txt-sub">Application Development and Maintenance</h3>
 										</a> </div>
@@ -1091,21 +1091,21 @@ const getHamburger = (divData,nav) => {
 										aria-label="Go to Business Process Management Page" target="_blank"
 										href="https://www.infosysbpm.com/Pages/index.aspx" title="Business Process Management"
 										rel="noopener noreferrer"> <img
-											src="/content/dam/infosys-web/en/global-resource/background-image/business-management.svg"
+											src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/business-management.svg"
 											alt="" class="">
 										<h3 class="hear-txt-sub">Business Process Management</h3>
 										</a> </div>
 									<div class="col-md-3 col-sm-12 col-xs-12"> <a aria-label="Go to Consulting Page"
-										href="/services/consulting.html" title="Consulting Services"> <img
-											src="/content/dam/infosys-web/en/global-resource/background-image/consulting.svg" alt=""
+										href="https://www.infosys.com/services/consulting.html" title="Consulting Services"> <img
+											src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/consulting.svg" alt=""
 											class="">
 										<h3 class="hear-txt-sub">Consulting Services</h3>
 										</a> </div>
 									<div class="col-md-3 col-sm-12 col-xs-12"> <a
 										aria-label="Go to Incubating Emerging Offerings Page"
-										href="/services/incubating-emerging-technologies.html"
+										href="https://www.infosys.com/services/incubating-emerging-technologies.html"
 										title="Incubating Emerging Offerings"> <img
-											src="/content/dam/infosys-web/en/global-resource/background-image/incubating-emerging.svg"
+											src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/background-image/incubating-emerging.svg"
 											alt="" class="">
 										<h3 class="hear-txt-sub">Incubating Emerging Offerings</h3>
 										</a> </div>
@@ -1118,7 +1118,7 @@ const getHamburger = (divData,nav) => {
 								style="visibility: visible; animation-duration: 0.3s; display: none;">
 								<div class="cross visible1024-cross"> <a title="close" href="javascript:void(0);" alt="Cross"
 									aria-label="Close menu" aria-haspopup="false" aria-expanded="false"> <img
-									src="/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
+									src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
 								<div class="submenu-portion">
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="h2-heading mb10">Platforms</h2>
@@ -1131,12 +1131,12 @@ const getHamburger = (divData,nav) => {
 										title="Infosys Finacle">Infosys
 										Finacle</a> </li>
 									<li> <a aria-label="Go to Infosys Live Enterprise Suite Page"
-										href="/navigate-your-next/live-enterprise-suite.html"
+										href="https://www.infosys.com/navigate-your-next/live-enterprise-suite.html"
 										title="Infosys Live Enterprise Suite">Infosys Live Enterprise Suite</a> </li>
-									<li> <a aria-label="Go to Infosys Cortex Page" href="/products-and-platforms/cortex.html"
+									<li> <a aria-label="Go to Infosys Cortex Page" href="https://www.infosys.com/products-and-platforms/cortex.html"
 										title="Infosys Cortex">Infosys
 										Cortex</a> </li>
-									<li> <a aria-label="Go to Infosys Meridian Page" href="/products-and-platforms/meridian.html"
+									<li> <a aria-label="Go to Infosys Meridian Page" href="https://www.infosys.com/products-and-platforms/meridian.html"
 										title="Infosys Meridian">Infosys
 										Meridian</a> </li>
 									</ul>
@@ -1147,13 +1147,13 @@ const getHamburger = (divData,nav) => {
 									</li>
 									<li> <a aria-label="Go to Infosys Equinox Page" href="https://www.infosysequinox.com/"
 										title="Infosys Equinox">Infosys Equinox</a> </li>
-									<li> <a aria-label="Go to Infosys Wingspan Page" href="/products-and-platforms/wingspan.html"
+									<li> <a aria-label="Go to Infosys Wingspan Page" href="https://www.infosys.com/products-and-platforms/wingspan.html"
 										title="Infosys Wingspan">Infosys
 										Wingspan</a> </li>
-									<li> <a aria-label="Go to Infosys HELIX Page" href="/products-and-platforms/helix.html"
+									<li> <a aria-label="Go to Infosys HELIX Page" href="https://www.infosys.com/products-and-platforms/helix.html"
 										title="Infosys HELIX">Infosys
 										HELIX</a> </li>
-									<li> <a aria-label="Go to Infosys Polycloud Page" href="/products-and-platforms/polycloud.html"
+									<li> <a aria-label="Go to Infosys Polycloud Page" href="https://www.infosys.com/products-and-platforms/polycloud.html"
 										title="Infosys Polycloud">Infosys Polycloud</a> </li>
 									</ul>
 								</div>
@@ -1164,31 +1164,31 @@ const getHamburger = (divData,nav) => {
 								style="visibility: visible; animation-duration: 0.3s; display: none;">
 								<div class="cross visible1024-cross"> <a title="close" href="javascript:void(0);" alt="Cross"
 									aria-label="Close menu" aria-haspopup="false" aria-expanded="false"> <img
-									src="/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
+									src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
 								<div class="submenu-portion">
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="h2-heading mb10">Infosys Knowledge Institute</h2>
 								</div>
 								<div class="col-md-6 col-sm-6 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
-									<li> <a aria-label="Go to Overview Page" title="Overview" href="/iki.html">Overview</a> </li>
+									<li> <a aria-label="Go to Overview Page" title="Overview" href="https://www.infosys.com/iki.html">Overview</a> </li>
 									<li> <a aria-label="Go to Connect Page" title="Connect"
-										href="/iki/iki-connect-with-us.html">Connect</a> </li>
-									<li> <a aria-label="Go to About Us Page" title="About Us" href="/iki/our-people.html">About
+										href="https://www.infosys.com/iki/iki-connect-with-us.html">Connect</a> </li>
+									<li> <a aria-label="Go to About Us Page" title="About Us" href="https://www.infosys.com/iki/our-people.html">About
 										Us</a> </li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-sm-6 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
-									<li> <a aria-label="Go to Learn Page" href="/iki/learn.html"><strong>Learn</strong></a></li>
+									<li> <a aria-label="Go to Learn Page" href="https://www.infosys.com/iki/learn.html"><strong>Learn</strong></a></li>
 									<li> <a aria-label="Go to Research Page" title="Research"
-										href="/iki/insights/research.html">Research</a> </li>
+										href="https://www.infosys.com/iki/insights/research.html">Research</a> </li>
 									<li> <a aria-label="Go to Perspectives Page" title="Perspectives"
-										href="/iki/insights.html">Perspectives</a> </li>
-									<li> <a aria-label="Go to Podcasts Page" title="Podcasts" href="/iki/podcast.html">Podcasts</a>
+										href="https://www.infosys.com/iki/insights.html">Perspectives</a> </li>
+									<li> <a aria-label="Go to Podcasts Page" title="Podcasts" href="https://www.infosys.com/iki/podcast.html">Podcasts</a>
 									</li>
 									<li> <a aria-label="Go to Videos Page" title="Videos"
-										href="/iki/insights/videos.html">Videos</a> </li>
+										href="https://www.infosys.com/iki/insights/videos.html">Videos</a> </li>
 									</ul>
 								</div>
 								</div>
@@ -1198,51 +1198,51 @@ const getHamburger = (divData,nav) => {
 								style="visibility: visible; animation-duration: 0.3s; display: none;">
 								<div class="cross visible1024-cross"> <a title="close" href="javascript:void(0);" alt="Cross"
 									aria-label="Close menu" aria-haspopup="false" aria-expanded="false"> <img
-									src="/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
+									src="https://www.infosys.com/content/dam/infosys-web/burger-menu/en/images/multiply.svg" alt="Cross"> </a> </div>
 								<div class="submenu-portion">
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="h2-heading mb10">About Us</h2>
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
-									<li> <a aria-label="Go to Overview Page" title="Overview" href="/about.html">Overview</a> </li>
-									<li> <a aria-label="Go to History Page" title="History" href="/about/history.html">History</a>
+									<li> <a aria-label="Go to Overview Page" title="Overview" href="https://www.infosys.com/about.html">Overview</a> </li>
+									<li> <a aria-label="Go to History Page" title="History" href="https://www.infosys.com/about/history.html">History</a>
 									</li>
-									<!--<li> <a  aria-label="Go to Videos Page" title="Corporate Governance" href="/content/infosys-web/en/about/corporate-governance.html">Corporate Governance</a> </li>-->
-									<li> <a aria-label="Go to ESG Page" title="ESG" href="/about/esg.html">ESG</a> </li>
+									<!--<li> <a  aria-label="Go to Videos Page" title="Corporate Governance" href="https://www.infosys.com/content/infosys-web/en/about/corporate-governance.html">Corporate Governance</a> </li>-->
+									<li> <a aria-label="Go to ESG Page" title="ESG" href="https://www.infosys.com/about/esg.html">ESG</a> </li>
 									<li> <a aria-label="Go to Management Profiles Page" title="Management Profiles"
-										href="/about/management-profiles.html">Management
+										href="https://www.infosys.com/about/management-profiles.html">Management
 										Profiles</a> </li>
 									<li> <a aria-label="Go to Infosys Knowledge Institute Page" title="Infosys Knowledge Institute"
-										href="/iki.html">Infosys Knowledge
+										href="https://www.infosys.com/iki.html">Infosys Knowledge
 										Institute</a> </li>
 									<li> <a aria-label="Go to Infosys Stories Page" title="Infosys Stories"
-										href="/infosys-stories.html">Infosys Stories</a> </li>
+										href="https://www.infosys.com/infosys-stories.html">Infosys Stories</a> </li>
 									<li> <a aria-label="Go to Infosys Springboard Page" title="Infosys Springboard"
-										href="/about/springboard.html">Infosys Springboard</a> </li>
+										href="https://www.infosys.com/about/springboard.html">Infosys Springboard</a> </li>
 									<li> <a aria-label="Go to Analyst Reports Page" title="Analyst Reports"
-										href="/analyst-speak.html">Analyst Reports</a> </li>
+										href="https://www.infosys.com/analyst-speak.html">Analyst Reports</a> </li>
 									</ul>
 			
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-12 align-list">
 									<ul class="list-unstyled li-separator">
 									<li> <a aria-label="Go to Subsidiaries Page" title="Subsidiaries"
-										href="/about/subsidiaries.html">Subsidiaries</a> </li>
+										href="https://www.infosys.com/about/subsidiaries.html">Subsidiaries</a> </li>
 									<li> <a aria-label="Go to Clients Speak Page" title="Clients Speak"
-										href="/about/clients-speak.html">Clients Speak</a> </li>
+										href="https://www.infosys.com/about/clients-speak.html">Clients Speak</a> </li>
 									<li> <a aria-label="Go to Alliances Page" title="Alliances"
-										href="/about/alliances.html">Alliances</a> </li>
+										href="https://www.infosys.com/about/alliances.html">Alliances</a> </li>
 									<li> <a aria-label="Go to Innovation Fund Page" title="Innovation Fund"
-										href="/about/innovation-fund.html">Innovation Fund</a> </li>
+										href="https://www.infosys.com/about/innovation-fund.html">Innovation Fund</a> </li>
 									<li> <a aria-label="Go to Infosys Innovation Network (IIN) Page"
-										title="Infosys Innovation Network (IIN)" href="/about/innovation-network.html">Infosys
+										title="Infosys Innovation Network (IIN)" href="https://www.infosys.com/about/innovation-network.html">Infosys
 										Innovation
 										Network (IIN)</a> </li>
 									<li> <a aria-label="Go to Diversity Equity Inclusion Page" title="Diversity Equity Inclusion"
-										href="/about/diversity-inclusion.html">Diversity Equity
+										href="https://www.infosys.com/about/diversity-inclusion.html">Diversity Equity
 										Inclusion</a> </li>
-									<li> <a aria-label="Go to Awards Page" title="Awards" href="/about/awards.html">Awards</a> </li>
+									<li> <a aria-label="Go to Awards Page" title="Awards" href="https://www.infosys.com/about/awards.html">Awards</a> </li>
 									</ul>
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-12 align-list">
@@ -1252,37 +1252,37 @@ const getHamburger = (divData,nav) => {
 										data-toggle="collapse" href="#tennismenu" aria-expanded="false"
 										aria-controls="tennismenu">Tennis</a> </li>
 									<div class="collapse" id="tennismenu">
-										<li> <a aria-label="Go to All Partnerships" title="All Partnerships" href="/tennis.html">All
+										<li> <a aria-label="Go to All Partnerships" title="All Partnerships" href="https://www.infosys.com/tennis.html">All
 											Partnerships</a> </li>
 										<li> <a aria-label="Go to Australian Open Page" title="Australian Open"
-											href="/australian-open.html">Australian Open</a> </li>
+											href="https://www.infosys.com/australian-open.html">Australian Open</a> </li>
 										<li> <a aria-label="Go to Roland-Garros Page" title="Roland-Garros"
-											href="/roland-garros.html">Roland-Garros</a> </li>
-										<li> <a aria-label="Go to ATP Page" title="ATP" href="/atp.html">ATP</a> </li>
+											href="https://www.infosys.com/roland-garros.html">Roland-Garros</a> </li>
+										<li> <a aria-label="Go to ATP Page" title="ATP" href="https://www.infosys.com/atp.html">ATP</a> </li>
 										<li> <a aria-label="Go to International Tennis Hall of Fame Page"
-											title="International Tennis Hall of Fame" href="/ithf.html"> International Tennis Hall of
+											title="International Tennis Hall of Fame" href="https://www.infosys.com/ithf.html"> International Tennis Hall of
 											Fame </a> </li>
 									</div>
 									<!-- <li> <a aria-label="Go to ATP Page" title="ATP"
-													href="/content/infosys-web/en/atp.html">ATP</a> </li>
+													href="https://www.infosys.com/content/infosys-web/en/atp.html">ATP</a> </li>
 											<li> <a aria-label="Go to Australian Open Page" title="Australian Open"
-													href="/content/infosys-web/en/australian-open.html">Australian Open</a> </li> -->
+													href="https://www.infosys.com/content/infosys-web/en/australian-open.html">Australian Open</a> </li> -->
 									<li class="border-top"> <a aria-label="Go to Bloomberg Media Page" title="Bloomberg Media"
-										href="/bloomberg.html">Bloomberg
+										href="https://www.infosys.com/bloomberg.html">Bloomberg
 										Media</a> </li>
 									<!-- <li> <a aria-label="Go to Roland-Garros Page" title="Roland-Garros"
-													href="/content/infosys-web/en/roland-garros.html">Roland-Garros</a> </li> -->
+													href="https://www.infosys.com/content/infosys-web/en/roland-garros.html">Roland-Garros</a> </li> -->
 									<li> <a aria-label="Go to Madison Square Garden Page" title="Madison Square Garden"
-										href="/madison-square-garden.html">Madison Square
+										href="https://www.infosys.com/madison-square-garden.html">Madison Square
 										Garden</a> </li>
 									<li> <a aria-label="Go to The Economist Group Page" title="The Economist Group"
-										href="/the-sustainability-project.html">The Economist
+										href="https://www.infosys.com/the-sustainability-project.html">The Economist
 										Group</a> </li>
-									<li> <a aria-label="Go to Dow Jones Page" title="Dow Jones" href="/dow-jones.html">Dow Jones</a>
+									<li> <a aria-label="Go to Dow Jones Page" title="Dow Jones" href="https://www.infosys.com/dow-jones.html">Dow Jones</a>
 									</li>
 									<li> <a aria-label="Go to Financial Times Page" title="Financial Times"
-										href="/financial-times.html">Financial Times</a> </li>
-									<li> <a aria-label="Go to The Cloud Hub Page" title="The Cloud Hub" href="/cloud-hub.html">The
+										href="https://www.infosys.com/financial-times.html">Financial Times</a> </li>
+									<li> <a aria-label="Go to The Cloud Hub Page" title="The Cloud Hub" href="https://www.infosys.com/cloud-hub.html">The
 										Cloud Hub</a> </li>
 									</ul>
 								</div>

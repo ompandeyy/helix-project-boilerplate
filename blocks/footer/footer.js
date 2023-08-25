@@ -187,56 +187,56 @@ export default async function decorate(block) {
     ftrcopyrightUlContent.classList.add('list-unstyled', 'country-align'); 
     ftrcopyrightRowSixDiv.append(ftrcopyrightUlContent);
     ftrcopyrightUlContent.innerHTML = `
-                                        <li><a aria-label="Go to Australia Page" href="/australia.html">Australia</a></li>
-                                        <li><a aria-label="Go to Austria Page" href="/at-en/">Austria</a></li>
-                                        <li><a aria-label="Go to Belgium Page" href="/be-en/">Belgium</a></li>
-                                        <li><a aria-label="Go to Brazil Page" href="/br/">Brazil</a></li>
-                                        <li><a aria-label="Go to Bulgaria Page" href="/bg-en/">Bulgaria</a></li>
-                                        <li><a aria-label="Go to Canada Page" href="/powering-digital-canada.html">Canada</a></li>
-                                        <li><a aria-label="Go to Chile Page" href="/contact/country.html?region=Americas&amp;subsidiary=Infosys#Chile">Chile</a></li>
-                                        <li><a aria-label="Go to China Page" href="/cn/">China</a></li>
-                                        <li><a aria-label="Go to Costa Rica Page" href="/contact/country.html?region=Americas&amp;subsidiary=Infosys#Costa%2520rica">Costa Rica</a></li>
-                                        <li><a aria-label="Go to Croatia Page" href="/hr-en/">Croatia</a> </li>
-                                        <li><a aria-label="Go to Czech Page" href="/cz-en/">Czech</a> </li>
-                                        <li><a aria-label="Go to Denmark Page" href="/dk-en/">Denmark</a> </li>
-                                        <li><a aria-label="Go to Estonia Page" href="/ee-en/">Estonia</a> </li>
-                                        <li><a aria-label="Go to Finland Page" href="/fi-en/">Finland</a> </li>
-                                        <li><a aria-label="Go to France Page" href="/fr-en/">France</a> </li>
-                                        <li><a aria-label="Go to Germany Page" href="/de/">Germany</a> </li>
-                                        <li><a aria-label="Go to Hong Kong Page" href="/hk-en.html">Hong Kong</a></li>
-                                        <li><a aria-label="Go to Hungary Page" href="/hu-en/">Hungary</a> </li>
-                                        <li><a aria-label="Go to India Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#India">India</a></li>
-                                        <li><a aria-label="Go to Ireland Page" href="/ie-en/">Ireland</a> </li>
-                                        <li><a aria-label="Go to Italy Page" href="/it-en/">Italy</a> </li>
-                                        <li><a aria-label="Go to Japan Page" href="/jp/">Japan</a> </li>
-                                        <li><a aria-label="Go to Liechtenstein Page" href="/contact/country.html?region=Europe&amp;subsidiary=Infosys#Liechtenstein">Liechtenstein</a> </li>
-                                        <li><a aria-label="Go to Latvia Page" href="/lv-en/">Latvia</a> </li>
-                                        <li><a aria-label="Go to Lithuania Page" href="/lt-en/">Lithuania</a> </li>
-                                        <li><a aria-label="Go to Luxembourg Page" href="/lu-en/">Luxembourg</a> </li>
-                                        <li><a aria-label="Go to Malaysia Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Malaysia">Malaysia</a></li>
-                                        <li><a aria-label="Mauritius" href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#Mauritius">Mauritius</a></li>
-                                        <li><a aria-label="Go to Mexico Page" href="/mx/">Mexico</a> </li>
-                                        <li><a aria-label="Go to New Zealand Page" href="/australia.html">New Zealand</a></li>
-                                        <li><a aria-label="Go to Norway Page" href="/no-en/">Norway</a> </li>
-                                        <li><a aria-label="Go to Peru Page" href="/contact/country.html?region=Americas&amp;subsidiary=Infosys#Peru">Peru</a></li>
-                                        <li><a aria-label="Go to Philippines Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Philippines">Philippines</a></li>
-                                        <li><a aria-label="Go to Poland Page" href="/pl-en/">Poland</a> </li>
-                                        <li><a aria-label="Go to Portugal Page" href="/pt-en/">Portugal</a> </li>
-                                        <li><a aria-label="Go to Romania Page" href="/ro-en/">Romania</a> </li>
-                                        <li><a aria-label="Go to Russia Page" href="/ru-en/">Russia</a> </li>
-                                        <li><a aria-label="Go to Singapore Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Singapore">Singapore</a>  </li>
-                                        <li><a aria-label="Go to Slovakia Page" href="/sk-en/">Slovakia</a> </li>
-                                        <li><a aria-label="Go to Slovenia Page" href="/sl-en/">Slovenia</a> </li>
-                                        <li><a aria-label="South Africa" href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#South%20Africa">South Africa</a></li>
-                                        <li><a aria-label="South Korea" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#South%20Korea">South Korea</a></li>
-                                        <li><a aria-label="Go to Spain Page" href="/es-en/">Spain</a> </li>
-                                        <li><a aria-label="Go to Sweden Page" href="/se-en/">Sweden</a> </li>
-                                        <li><a href="/ch-en/" title="Switzerland">Switzerland</a></li>
-                                        <li><a aria-label="Go to Taiwan Page" href="/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Taiwan">Taiwan</a> </li>
-                                        <li><a aria-label="Go to Netherlands Page" href="/nl-en/">The Netherlands</a> </li>
-                                        <li><a aria-label="Go to Arab Emirates Page" href="/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#United%20Arab%20Emirates">United Arab Emirates</a></li>
-                                        <li><a aria-label="Go to UK Page" href="/gb-en/">United Kingdom (UK)</a></li>
-                                        <li><a aria-label="Go to Americas Page" href="/americas.html">United States</a></li>
+                                        <li><a aria-label="Go to Australia Page" href="https://www.infosys.com/australia.html">Australia</a></li>
+                                        <li><a aria-label="Go to Austria Page" href="https://www.infosys.com/at-en/">Austria</a></li>
+                                        <li><a aria-label="Go to Belgium Page" href="https://www.infosys.com/be-en/">Belgium</a></li>
+                                        <li><a aria-label="Go to Brazil Page" href="https://www.infosys.com/br/">Brazil</a></li>
+                                        <li><a aria-label="Go to Bulgaria Page" href="https://www.infosys.com/bg-en/">Bulgaria</a></li>
+                                        <li><a aria-label="Go to Canada Page" href="https://www.infosys.com/powering-digital-canada.html">Canada</a></li>
+                                        <li><a aria-label="Go to Chile Page" href="https://www.infosys.com/contact/country.html?region=Americas&amp;subsidiary=Infosys#Chile">Chile</a></li>
+                                        <li><a aria-label="Go to China Page" href="https://www.infosys.com/cn/">China</a></li>
+                                        <li><a aria-label="Go to Costa Rica Page" href="https://www.infosys.com/contact/country.html?region=Americas&amp;subsidiary=Infosys#Costa%2520rica">Costa Rica</a></li>
+                                        <li><a aria-label="Go to Croatia Page" href="https://www.infosys.com/hr-en/">Croatia</a> </li>
+                                        <li><a aria-label="Go to Czech Page" href="https://www.infosys.com/cz-en/">Czech</a> </li>
+                                        <li><a aria-label="Go to Denmark Page" href="https://www.infosys.com/dk-en/">Denmark</a> </li>
+                                        <li><a aria-label="Go to Estonia Page" href="https://www.infosys.com/ee-en/">Estonia</a> </li>
+                                        <li><a aria-label="Go to Finland Page" href="https://www.infosys.com/fi-en/">Finland</a> </li>
+                                        <li><a aria-label="Go to France Page" href="https://www.infosys.com/fr-en/">France</a> </li>
+                                        <li><a aria-label="Go to Germany Page" href="https://www.infosys.com/de/">Germany</a> </li>
+                                        <li><a aria-label="Go to Hong Kong Page" href="https://www.infosys.com/hk-en.html">Hong Kong</a></li>
+                                        <li><a aria-label="Go to Hungary Page" href="https://www.infosys.com/hu-en/">Hungary</a> </li>
+                                        <li><a aria-label="Go to India Page" href="https://www.infosys.com/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#India">India</a></li>
+                                        <li><a aria-label="Go to Ireland Page" href="https://www.infosys.com/ie-en/">Ireland</a> </li>
+                                        <li><a aria-label="Go to Italy Page" href="https://www.infosys.com/it-en/">Italy</a> </li>
+                                        <li><a aria-label="Go to Japan Page" href="https://www.infosys.com/jp/">Japan</a> </li>
+                                        <li><a aria-label="Go to Liechtenstein Page" href="https://www.infosys.com/contact/country.html?region=Europe&amp;subsidiary=Infosys#Liechtenstein">Liechtenstein</a> </li>
+                                        <li><a aria-label="Go to Latvia Page" href="https://www.infosys.com/lv-en/">Latvia</a> </li>
+                                        <li><a aria-label="Go to Lithuania Page" href="https://www.infosys.com/lt-en/">Lithuania</a> </li>
+                                        <li><a aria-label="Go to Luxembourg Page" href="https://www.infosys.com/lu-en/">Luxembourg</a> </li>
+                                        <li><a aria-label="Go to Malaysia Page" href="https://www.infosys.com/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Malaysia">Malaysia</a></li>
+                                        <li><a aria-label="Mauritius" href="https://www.infosys.com/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#Mauritius">Mauritius</a></li>
+                                        <li><a aria-label="Go to Mexico Page" href="https://www.infosys.com/mx/">Mexico</a> </li>
+                                        <li><a aria-label="Go to New Zealand Page" href="https://www.infosys.com/australia.html">New Zealand</a></li>
+                                        <li><a aria-label="Go to Norway Page" href="https://www.infosys.com/no-en/">Norway</a> </li>
+                                        <li><a aria-label="Go to Peru Page" href="https://www.infosys.com/contact/country.html?region=Americas&amp;subsidiary=Infosys#Peru">Peru</a></li>
+                                        <li><a aria-label="Go to Philippines Page" href="https://www.infosys.com/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Philippines">Philippines</a></li>
+                                        <li><a aria-label="Go to Poland Page" href="https://www.infosys.com/pl-en/">Poland</a> </li>
+                                        <li><a aria-label="Go to Portugal Page" href="https://www.infosys.com/pt-en/">Portugal</a> </li>
+                                        <li><a aria-label="Go to Romania Page" href="https://www.infosys.com/ro-en/">Romania</a> </li>
+                                        <li><a aria-label="Go to Russia Page" href="https://www.infosys.com/ru-en/">Russia</a> </li>
+                                        <li><a aria-label="Go to Singapore Page" href="https://www.infosys.com/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Singapore">Singapore</a>  </li>
+                                        <li><a aria-label="Go to Slovakia Page" href="https://www.infosys.com/sk-en/">Slovakia</a> </li>
+                                        <li><a aria-label="Go to Slovenia Page" href="https://www.infosys.com/sl-en/">Slovenia</a> </li>
+                                        <li><a aria-label="South Africa" href="https://www.infosys.com/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#South%20Africa">South Africa</a></li>
+                                        <li><a aria-label="South Korea" href="https://www.infosys.com/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#South%20Korea">South Korea</a></li>
+                                        <li><a aria-label="Go to Spain Page" href="https://www.infosys.com/es-en/">Spain</a> </li>
+                                        <li><a aria-label="Go to Sweden Page" href="https://www.infosys.com/se-en/">Sweden</a> </li>
+                                        <li><a href="https://www.infosys.com/ch-en/" title="Switzerland">Switzerland</a></li>
+                                        <li><a aria-label="Go to Taiwan Page" href="https://www.infosys.com/contact/country.html?region=Asia_X32_Pacific&amp;subsidiary=Infosys#Taiwan">Taiwan</a> </li>
+                                        <li><a aria-label="Go to Netherlands Page" href="https://www.infosys.com/nl-en/">The Netherlands</a> </li>
+                                        <li><a aria-label="Go to Arab Emirates Page" href="https://www.infosys.com/contact/country.html?region=Middle_X32_East_X32_and_X32_Africa&amp;subsidiary=Infosys#United%20Arab%20Emirates">United Arab Emirates</a></li>
+                                        <li><a aria-label="Go to UK Page" href="https://www.infosys.com/gb-en/">United Kingdom (UK)</a></li>
+                                        <li><a aria-label="Go to Americas Page" href="https://www.infosys.com/americas.html">United States</a></li>
                                   `;
    
     

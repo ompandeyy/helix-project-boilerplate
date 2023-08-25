@@ -118,7 +118,7 @@ insideSecondDivForm.innerHTML = `
     <label class="form-switch">
       <input type="checkbox" id="opt-in-comm" name="opt-in-comm" value="Yes">
       <i></i> </label>
-    <span id="lineheight">Opt in for marketing communication <a class="pvcy-stmt" href="/privacy-statement.html" title="Privacy Statement" target="_blank">Privacy Statement</a></span></p>
+    <span id="lineheight">Opt in for marketing communication <a class="pvcy-stmt" href="https://www.infosys.com/privacy-statement.html" title="Privacy Statement" target="_blank">Privacy Statement</a></span></p>
 </div>
 <div class="form-group col-md-3 col-sm-3 col-xs-4">
   <button type="submit" class="submit-btn">Submit </button>

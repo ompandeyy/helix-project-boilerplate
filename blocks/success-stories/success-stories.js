@@ -54,7 +54,7 @@ export default function decorate(block) {
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 relative-off">
           <div class="eqheight">
-            <p class="caption-txt"><a title="${imageAlt}" class="black-color" href="/industries/healthcare/pacesetters/digital-growth-enterprise.html#pacesettersvideo" target="_self">${description}</a></p>
+            <p class="caption-txt"><a title="${imageAlt}" class="black-color" href="https://www.infosys.com/industries/healthcare/pacesetters/digital-growth-enterprise.html#pacesettersvideo" target="_self">${description}</a></p>
             <ul class="list-inline tag-bg">
               <li class="lct-txt">  </li>
             </ul>
