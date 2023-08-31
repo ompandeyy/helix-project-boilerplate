@@ -409,7 +409,7 @@ const getBreadcrumb = (divData,nav) => {
 																	</li>
 																	<li>
 																		<a title="Offerings"
-																			href="javascript:void(0);">Offerings</a>
+																			href="https://main--helix-project-boilerplate--ompandeyy.hlx.live/digital-experience/offering">Offerings</a>
 																	</li>
 																</ul>
 															</li>
