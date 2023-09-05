@@ -56,11 +56,14 @@
       border: 1px solid #888;
       width: 20%;
   }.close {
-      color: #aaa;
-      float: right;
-      font-size: 28px !important;
-      font-weight: bold;
-  }
+    color: #aaa;
+    float: right;
+    font-size: 35px !important;
+    font-weight: bold;
+}
+#emailDisplay{
+    margin: 10px !important;
+}
   .close:hover,
   .close:focus {
     color: black;
