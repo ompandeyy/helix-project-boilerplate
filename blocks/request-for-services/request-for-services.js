@@ -195,7 +195,7 @@ emailInput.addEventListener("input", function() {
 //var myDate = new Date();
 //myDate.setMonth(myDate.getMonth() + 12);
     // Set the cookie with the email value
-    document.cookie = "email=" + emailValue+ ";domain=https://main--helix-project-boilerplate--ompandeyy.hlx.live/;path=/";
+    document.cookie = "email=" + emailValue;
    // expires=" + myDate + ";domain=.hlx.live;path=https://main--boilerplate--arja-sankar.hlx.live/";
 });
 
