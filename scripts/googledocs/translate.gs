@@ -19,42 +19,7 @@ function showSidebar() {
   DocumentApp.getUi().showSidebar(ui);
 }
 
-/**
- * Gets the text the user has selected. If there is no selection,
- * this function displays an error message.
- *
- * @return {Array.<string>} The selected text.
- */
-function getSelectedText() {
-  const selection = DocumentApp.getActiveDocument().getSelection();
-  const text = [];
-  if (selection) {
-    const elements = selection.getSelectedElements();
-    for (let i = 0; i < elements.length; ++i) {
-      if (elements[i].isPartial()) {
-        const element = elements[i].getElement().asText();
-        const startIndex = elements[i].getStartOffset();
-        const endIndex = elements[i].getEndOffsetInclusive();
 
-        text.push(element.getText().substring(startIndex, endIndex + 1));
-      } else {
-        const element = elements[i].getElement();
-        // Only translate elements that can be edited as text; skip images and
-        // other non-text elements.
-        if (element.editAsText) {
-          const elementText = element.asText().getText();
-          // This check is necessary to exclude images, which return a blank
-          // text element.
-          if (elementText) {
-            text.push(elementText);
-          }
-        }
-      }
-    }
-  }
-  if (!text.length) throw new Error('Please select some text.');
-  return text;
-}
 
 /**
  * Gets the stored user preferences for the origin and destination languages,
@@ -178,20 +143,25 @@ function insertText(newText) {
 
 function translateText(text) {
  // Replace with your Azure OpenAI API endpoint
-  var azureOpenAIEndpoint = "https://franklinazureai.openai.azure.com/openai/deployments/AdobeFranklinDemoDeploy/completions?api-version=2022-12-01";
+  var azureOpenAIEndpoint = "https://franklinazureai.openai.azure.com/openai/deployments/AdobeFranklinDemoDeploy/chat/completions?api-version=2023-07-01-preview";
 
   // Replace with your Azure OpenAI API key
   var azureOpenAIApiKey = "716b355c4f554eb38aa06acd9281813e";
 
   // Create the request payload
   var requestData = {
-    "prompt": text,
-    "max_tokens": 100,
-    "temperature": 1,
-    "frequency_penalty": 0,
-    "presence_penalty": 0,
-    "top_p": 0.5,
-    "stop": null
+  "messages": [
+    {
+      "role": "user",
+      "content": text
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "frequency_penalty": 0,
+  "presence_penalty": 0,
+  "max_tokens": 800,
+  "stop": null
   };
 
   // Set up the options for the API request
@@ -215,7 +185,10 @@ function translateText(text) {
 
   // Parse the JSON response from Azure OpenAI
   var responseBody = JSON.parse(responseText);
-  var azureOpenAIResponse = responseBody.choices[0].text;
 
-  return azureOpenAIResponse;
+  var messageFromAi = responseBody.choices[0].message.content;
+  var azureOpenAIResponse = "responseBody.messages.content";
+  Logger.log("Response: " + messageFromAi);
+
+  return messageFromAi;
 }
